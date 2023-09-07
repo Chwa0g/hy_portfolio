@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>탭 구조를 이용한 Item Gallery</title>
+		<meta charset="UTF-8" />
+		<style>
+			body{
+				margin-top: 30px;
+				font: 1.2em verdana,sans-serif;
+				background-color:#cccccc;
+			}
+			h1,ul,li{
+				padding: 0px; margin: 0px;
+			}
+			h1{
+				padding-bottom: 20px;
+				text-align: center;
+				font-size: 2em;
+				color: #ffffff;
+				font-style: italic;
+				text-shadow: 0px 0px 10px #666666;
+			}
+			a{
+				text-decoration: none;
+			}
+			#photoBox{
+				width: 330px;
+				margin: 0px auto;
+			}
+			#tabNavi{
+				list-style: none;
+				padding-left: 100px;
+			}
+			#tabNavi li{
+				float:left;
+				margin-left: 2px;
+			}
+			#tabNavi li a{
+				font-size: 0.85em;
+				color: #ff9966;
+				text-align: center;
+				width: 50px;
+				display: block;
+				padding: 3px 10px;
+				background: #ffffff;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+			#tabNavi li a:hover{
+				color: #ffffff;
+				background: #ff6633;
+			}
+			#tabNavi li.activeS a{
+				color: #ffffff;
+				background: #ff6633;
+			}
+			#photo{
+				border: 5px solid #ff6633;
+				border-radius: 15px;
+				background: #ffffff;
+				clear: both;
+			}
+			#photo img{
+				display: block;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Gold Line Clutch Bag</h1>
+		<div id="photoBox"> 
+			<ul id="tabNavi">
+				<li><a href="unit03_01.html">Pink</a></li>
+				<li><a href="unit03_02.html">White</a></li>
+				<li class="activeS"><a href="unit03_03.html">Navi</a></li>
+			</ul>
+			<div id="photo">
+					<img src="images/bag_navy.png" width="300" height="300" alt="Navy" />
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		#ex div{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			border-radius: 0px;
+			-webkit-transition-property: background-color,border-radius;
+			-webkit-transition-duration: 1s;
+			-webkit-transition-timing-function: ease-in;
+			
+			-moz-transition-property: background-color,border-radius;
+			-moz-transition-duration: 1s;
+			-moz-transition-timing-function: ease-in;
+			
+			-ms-transition-property: background-color,border-radius;
+			-ms-transition-duration: 1s;
+			-ms-transition-timing-function: ease-in;
+			
+			-o-transition-property: background-color,border-radius;
+			-o-transition-duration: 1s;
+			-o-transition-timing-function: ease-in;
+			
+			transition-property: background-color,border-radius;
+			transition-duration: 1s;
+			transition-timing-function: ease-in;
+			transition-delay: 1s;
+		}
+		#ex:hover div{
+			background-color: blue;
+			border-radius: 50px;
+		}
+	</style>
+	<title> transition 속성으로 애니메이션 만들기 </title>
+</head>
+<body>
+	<div id="ex">
+		<div></div>
+	</div>
+</body>
+</html>

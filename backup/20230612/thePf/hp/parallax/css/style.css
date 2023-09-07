@@ -1,0 +1,94 @@
+#wrap{width: 100%; height: 10000px;
+}
+#gnb{width: 100%; height: 100px; position: fixed; top:0; left:0; z-index:100;}
+#gnb>ul{width: 800px; height: 100%; position: absolute; right: 0;}
+#gnb>ul>li{width: 25%; height: 100%; float: left;}
+#gnb>ul>li>a{color: #ffffff; font-size: 1.2em; text-align: center; line-height: 100px;
+	transition-duration: 0.5s; font-weight: bold; opacity:0.7;
+}
+#gnb>ul>li>a:hover{transition-duration: 0.5s; opacity:1;}
+#gnb>ul>li>a.on{transition-duration: 0.5s; opacity:1;}
+
+#bg{width: 1920px; height: 1080px;
+	background: url(../images/index.gif) no-repeat;
+	background-size: cover; z-index:-4;
+	position: fixed; top:0; left:0;
+}
+#bg2{
+	width: 1920px; height: 1080px; background: url(../images/shi.gif) no-repeat;
+	z-index:-3; position: fixed; top:1000px; left:0; opacity:0; background-size: cover;
+}
+#bg3{
+	width: 1920px; height: 1080px; background: #a21911;
+	z-index:-2; position: fixed; top:0; left:0; opacity:0;
+}
+#bg4{
+	width: 1024px; height: 1024px; background: url(../images/logo.png)no-repeat;
+	z-index:10; position: fixed; top:0; left:438px; opacity:0;
+}
+#container{width: 100%; height: 100%; position: relative;}
+#container>div{position: absolute; font-weight: bold; font-size: 2em; opacity:0; color: #fff;}
+.han01{top: 50px; left: 50px;}
+.han02{top: 900px; left: 535px;}
+.han03{top: 5px; left: 800px;}
+.han04{top: 700px; left: 995px;}
+.han05{top: 805px; left: 525px;}
+#container .han06{top: 450px; left: 750px; opacity:1; font-size: 5em;}
+#container .han07{top: 450px; left: 1400px; opacity:1; font-size: 5em;}
+.han08{top: 700px; left: 1700px;}
+.han09{top: 5px; left: 1100px;}
+.han10{top: 500px; left: 275px;}
+.han11{top: 100px; left: 1800px;}
+.han12{top: 500px; left: 2300px;}
+.han13{top: 1100px; left: 900px;}
+#container .han14{top: 360px; left: 365px; font-size: 10em;}
+#container .han15{top: 350px; left: 990px; font-size: 10em;}
+#container .han16{top: 600px; left: 325px; font-size: 10em;}
+#container .han17{top: 400px; left: 475px; font-size: 10em;}
+#container .han18{top: 600px; left: 625px; font-size: 10em;}
+#container .han19{top: 400px; left: 775px; font-size: 10em;}
+#container .han20{top: 500px; left: 950px; font-size: 5em;}
+#container .han21{top: 200px; left: 120px; font-size: 5em;}
+#container .han22{top: 450px; left: 120px; font-size: 5em;}
+#container .han23{top: 700px; left: 120px; font-size: 5em;}
+
+#scrollval{position: fixed; top: 50px; right: 50px; width: 300px; height: 100px; color: #fff; font-size: 36px; display:none;}
+
+#clock1{width: 4px; height: 800px; opacity:0;
+	position: absolute; top: 100px; left: 960px; z-index: 2;
+}
+#clock1 .clock01{width: 4px; height: 400px; background: #ffffff; border-radius: 3px;}
+
+#clock2{width: 4px; height: 800px; opacity:0;
+	position: absolute; top: 100px; left: 960px; z-index: 2;
+}
+#clock2 .clock02{width: 2px; height: 400px; background: #ffffff; border-radius: 3px;}
+
+#clock3{width: 10px; height: 10px; opacity:0; position: absolute;
+	top: 495px; left: 957px; background: #fff; border-radius: 10px;
+}
+#clock4{width: 900px; height: 900px; opacity:0; position: absolute;
+	top: 50px; left: 500px; border-radius: 450px; border: 5px solid #fff;
+}
+#ham{width: 400px; height: 280px;background: url(../images/ham.png) no-repeat;
+	 position: fixed; top: -100px; left: 1450px;  background-size: cover; opacity:0;
+}
+#text{width: 300px; height: 100px; position: fixed;
+	top: 870px; left: 1600px; opacity:0;
+	animation-name:ani; animation-duration: 1.5s;
+	animation-iteration-count:infinite; animation-direction: alternate;
+}
+#text a{width:100%; height: 100%; font-size: 1.2em; color: #ffffff; font-weight: bold;}
+
+#imgText{width: 500px; height: 500px; background: url(../images/text.png) no-repeat;
+	background-size: cover; position: fixed; top: 120px; right: 50px; opacity:0;
+}
+
+/* 화살표 애니매이션 */
+@keyframes ani{
+	0%{left: 1600px;}
+	100%{left: 1630px;}
+	from{left: 1600px;}
+	to{left: 1630px;}
+}
+

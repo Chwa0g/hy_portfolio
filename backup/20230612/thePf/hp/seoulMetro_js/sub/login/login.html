@@ -1,0 +1,36 @@
+﻿<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title>로그인페이지</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="../favicon/favicon.ico">
+	<link rel="icon" type="image/gif" href="../favicon/favicon_s.gif">
+</head>
+<body>
+			<form id="loginForm" method="post" action="#">
+			<h1><a href="../../main/index.html">Metro Login</a></h1>
+			<fieldset>	
+				<div id="login">
+					<p>
+						<input type="text" id="userId" placeholder="ID" />
+					</p>
+					<p>
+						<input type="password" id="userPWD" placeholder="Password" />
+					</p>
+				</div>
+				<p id="btn1">
+					<input type="checkbox" id="saveId" value="savedIdYes" />
+					<label for="saveId">아이디저장</label>	
+					<input type="checkbox" id="autoLogin" value="secureYes" />
+					<label for="autoLogin">자동로그인</label>	
+				</p>
+				<input type="submit" value="Login" id="btnLogin" />
+				<p id="btn2">
+					<input type="button" value="회원가입" id="btnJoin" />
+					<input type="button" value="아이디/비밀번호 찾기" id="btnSearch" />
+				</p>
+			</fieldset>
+			</form>
+</body>
+</html>

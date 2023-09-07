@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>첫 번째, 짝수 번째, 세 번째 li 요소 꾸미기 </title>
+		<meta charset="UTF-8" />
+		<style type="text/css">
+		/* 첫번째 li 태그 (낮은 브라우져 고려 안해야 쓸 수 있음 - 태그 순서로 선택 first,last-child/nth-child(숫자) 잘못하면 ㅁ댐) */
+			li:first-child{
+				color: pink;
+				background: brown;
+				width: 500px;
+				padding: 5px;
+				}
+			li:last-child{
+				background: pink;
+				color: brown;
+				width: 500px;
+				padding: 5px;
+				}
+		/* 짝수번째 홀수번째 li 태그  */
+			li:nth-child(even){
+				color: brown;
+				background: silver;
+				width: 500px;
+				padding: 5px;
+				}
+			li:nth-child(odd){
+				background: #ff000f;
+				color: #cccccc;
+				width: 500px;
+				padding: 5px;
+				}
+		/* 세번째 li 태그  */
+			li:nth-child(4){
+				background: blue;
+				color: #ffffff;
+				width: 500px;
+				padding: 5px;
+				}
+		</style>
+
+	</head>
+
+	<body>
+		<h1>순서와 관련있는 가상 선택자</h1>
+		<hr />
+		<h2>전통 한과 차 만들기</h2> 
+		<ul>
+			<li>약식</li>
+			<li>곶감쌈</li>
+			<li>수정과</li>
+			<li>오미자차</li>
+			<li>수박떡화채</li>
+		</ul>
+	</body>
+</html>

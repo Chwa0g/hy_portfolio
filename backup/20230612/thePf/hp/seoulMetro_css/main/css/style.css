@@ -1,0 +1,730 @@
+﻿*{margin:0; padding:0; border:0;}
+body{font-family: 'notokr-regular' , dotum, sans-serif;
+	background: url(../images/bg_section0_v2.jpg) no-repeat;
+	background-size: cover;
+}
+ul,li,ol,dl{list-style:none;}
+img{border:0; vertical-align:top;}
+a{text-decoration: none;}
+.cf:after{content:""; display:block; clear:both;}
+.fl{float:left;}
+/* .cf{*zoom:1;} */
+
+/* ----------------------------------------------------------------------------------- */
+
+/* 전체틀 */
+#wrap{
+	position: relative;
+}
+/* 메뉴헤더 */
+#header{
+	width: 100%;
+	height: 110px;
+	position: relative;
+	float: left;
+	top: 0;
+	left: 0;
+}
+/* 메뉴헤더인 */
+#header_in{
+	position: fixed;
+	width: 100%;
+	height: 110px;
+	margin: 0 auto;
+	background: #5474c0;
+	z-index: 98;
+}
+/* 서울 글로벌네비박스 */
+#seoul_gnb{
+	position: relative;
+	width: 1739px;
+	height: 31px;
+	margin: 0 auto;
+}
+#seoul_gnb a{
+	display: block;
+}
+/* 글로벌네비 박스 안 앞부분 박스 */
+#seoul_link{
+	position: fixed;
+	width: 794px;
+	height: 30px;
+	margin: 0.5px 0px 0.5px 365px;
+}
+/* 서울링크 박스 안 이미지 위치값 */
+#seoul_link>.seoul_ul>li{background: url(../images/seoulgnb.png) no-repeat;}
+
+#seoul_link ul .seoul_icon{
+	background-position: 0px -20px;
+	width:78px;
+	height:20px;
+	margin: 3px 30px 0px 0px;
+}
+#seoul_link ul .seoul_icon>a{width:78px; height:20px;}
+
+#seoul_link ul .seoul_notice{
+	background-position: -17px -45px;
+	width:17px;
+	height:11px;
+	margin: 9px 5px 0px 0px;
+}
+#seoul_link ul .seoul_notice>a{width:17px; height:11px;}
+
+#seoul_link ul .seoul_text{
+	background: none;
+	font-size: 12px;
+}
+#seoul_link ul .seoul_text>a{
+	width:600px;
+	height:30px;
+	color: #ffffff;
+	line-height: 30px;
+}
+
+/* 글로벌네비 박스 안 뒷부분 박스 */
+#seoul_quick{
+	position: fixed;
+	width: 286px;
+	height: 30px;
+	margin: 0.5px 0px 0.5px 1103px;
+}
+/* 서울퀵 박스 안 이미지 위치값 */
+#seoul_quick>.q_icon>li{background: url(../images/seoulgnb.png) no-repeat;}
+#seoul_quick ul>li{width:56px; height:30px; border-right: 1px solid #6582c6; box-shadow: 1px 0px 0.1px #4263af;}
+#seoul_quick ul>li>a{width:56px; height:30px;}
+/* 버튼 호버 문제 해결해야됨 */
+
+#seoul_quick ul .qi{background-position: -9999px -9999px;}
+#seoul_quick ul .qi1{background-position: -78px -30px;}
+#seoul_quick ul .qi2{background-position: -132px -30px;}
+#seoul_quick ul .qi3{background-position: -187px -30px;}
+#seoul_quick ul .qi4{background-position: -242px -30px; text-indent: 9999px;}
+
+/* 메뉴박스 */
+#menu_top{
+	width: 100%;
+	height: auto;
+	z-index:99;
+	position: fixed;
+	background: #ffffff;
+}
+/* 원뎁배경색 및 원뎁투텝 박스 */
+#menu{
+	width: 100%;
+	height: 79px;
+	position: relative;
+	z-index: 10;
+	background: #ffffff;
+	background: rgba(255,255,255,1);
+}
+/* 원뎁투뎁 감싸고 로고 넣은 박스 중앙정렬 */
+#menu_under{
+	width: 1739px;
+	height: 79px;
+	margin: 0 auto;
+}
+/* 원뎁투뎁감싸고 위치조정 박스 */
+#nav{
+	margin-left: 235px;
+}
+/* 로고 */
+#menu_under>a{
+	position: absolute;
+	margin-top: 19px;
+	margin-left: 9px;
+}
+/* 원뎁스 */
+#nav>.bg_menu>ul>li{
+	width: 213.3px;
+	text-align: center;
+}
+/* 원뎁스 사이선 */
+#nav>.bg_menu>ul>.linem{
+	background: url(../images/gnb_line01.gif) 212.3px 35px no-repeat;
+}
+/* 원뎁스 글자 */
+#nav>.bg_menu>ul>li>a{
+	display: block;
+	font-size: 17px;
+	height: 79px;
+	line-height: 80px;
+	font-weight: 600;
+	color: #000000;
+	text-decoration: none;
+	font-family: "Nanum Gothic";
+	transition-duration: 0.2s;
+}
+/* 투뎁스 */
+#nav>.bg_menu>ul>li>ul{
+	padding: 10px 0px 0px 20px;
+	text-align: left;
+	width: auto;
+	height: 500px;
+}
+/* 투뎁스글자 */
+#nav>.bg_menu>ul>li>ul a{
+	display: block;
+	color: #444444;
+	height: auto;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 40px;
+	font-family: "Nanum Gothic";
+	transition-duration: 0.3s;
+}
+/* 원뎁투뎁 글씨 트랜지션 */
+#nav>.bg_menu{
+	position: relative;
+	z-index: 9;
+	overflow: hidden;
+	height: 79px;
+	transition-property: height;
+	transition-duration: 0.3s;
+}
+/* 투뎁 호버 배경색 */
+.bg{
+	position: absolute;
+	top: 79px;
+	left: 0;
+	width: 100%;
+	height: 0px;
+	background: #ffffff;
+	z-index: 2;
+	border-top: 1px solid #cccccc;
+	transition-property: height;
+	transition-duration: 0.3s;
+}
+/* 메뉴안에 퀵아이콘 */
+#menu_quick{
+	position:fixed;
+	left: 91%;
+	top: 4%;
+	width:101px;
+	height:61px;
+	z-index: 11;
+}
+#menu_quick .mq{
+	width:97px;
+	height:57px;
+	border: 1px solid #dcdcdc;
+}
+#menu_quick .mq .sitemapq{
+	background: url(../images/btn_sitemap2.png) no-repeat 13px 8px;
+	width:48px;
+	height: 28px;
+	border-right:1px solid #dcdcdc;
+	border-bottom:1px solid #dcdcdc;
+}
+#menu_quick .mq .memberq{
+	background: url(../images/btn_certify.png) no-repeat 17px 5px;
+	width:48px;
+	height: 28px;
+	border-bottom:1px solid #dcdcdc;
+}
+#menu_quick .mq .searchq{
+	background: url(../images/sch_trigger03.png) no-repeat 15px 7px;
+	width:48px;
+	height: 28px;
+	border-right:1px solid #dcdcdc;
+}
+#menu_quick .mq .searchq .searchq_tab{
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	left:0;
+	top:111px;
+	background:#ffffff;
+	box-shadow: 0px 2px 5px #333333;
+	display: none;
+}
+#menu_quick .mq .searchq .searchq_tab_box{
+	width: 705px;
+	height: 75px;
+	margin: 0 auto;
+	padding-top: 25px;
+}
+#menu_quick .mq .searchq .searchq_tab input{
+	width: 594px;
+	height: 44px;
+	border: 3px solid #6789c9;
+	float: left;
+}
+#menu_quick .mq .searchq .searchq_tab_box a{
+	width: 100px;
+	height: 50px;
+	color: #ffffff;
+	background: #6789c9;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-left: 5px;
+	letter-spacing: -1px;
+}
+#menu_quick .mq .globalq{
+	background: url(../images/btn_lang.png) no-repeat 15px 7px;
+	width:48px;
+	height: 28px;
+}
+#menu_quick .mq .globalq .globalq_tab{
+	position: absolute;
+	top:59px;
+	left: 0px;
+	background: #ffffff;
+	width: 100px;
+	height: 60px;
+	display:none;
+}
+#menu_quick .mq .globalq .globalq_tab li{
+	border-bottom: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	width: 97px;
+	height: 19px;
+}
+#menu_quick .mq .globalq .globalq_tab li a{
+	font-size: 13px;
+	margin: 0 auto;
+	color: #777777;
+	line-height: 19px;
+}
+#menu_quick .mq .globalq .globalq_tab li a:hover{color: #4ca6ff;}
+#menu_quick ul>li>a{
+	display:block;
+	width:48px;
+	height: 28px;
+}
+
+
+/* ------------------------------------------------------------------------------------- */
+
+/* 원뎁호버 A */
+#nav>.bg_menu>ul>li:hover>a{color: #ffffff; background: #28388f;}
+/* 투뎁호버 A */
+#nav>.bg_menu>ul>li>ul>li>a:hover{text-decoration: underline; color: #000000;}
+/* 투뎁배경색 */
+#nav>.bg_menu>ul>li:hover>ul{background: #e1e1e1; 	transition-duration: 0.2s;}
+/* 투뎁트랜지션 */
+#nav:hover .bg_menu{height: 537px;}
+/* 투뎁전체배경 */
+#nav:hover .bg{height: 457px; box-shadow: 0px 5px 5px #777777;}
+
+/* ------------------------------------------------------------------------ */
+
+/* 메인 중앙박스 */
+#container{
+	position: relative;
+	width: 1288px;
+	height: 552px;
+	margin: 0 auto;
+	top: 200px;
+}
+/* 서울매트로 글씨랑 검색 박스 */
+#seoul_metro{
+	position: absolute;
+	width: 1288px;
+	height: 184px;
+	background: url(../images/main_text01.png) no-repeat;
+}
+/* 서울매트로 밑에 글씨 언제나 함께하는.... */
+#seoul_metro>span{
+	display: block;
+	color: #ffffff;
+	font-size: 1.5em;
+	margin-top: 60px;
+	font-family: 'notokr-light';
+}
+
+
+/* 경로검색 인풋 틀박스 */
+.input_search{
+	position: relative;
+	width: 600px;
+	height: 47px;
+	top: 20px;
+}
+/* 경로검색 앞박스 */
+.i_search1{
+	width: 216px;
+	height: 45px;
+	border: 1px solid #cccccc;
+	background: url(../images/icon_con09.gif) no-repeat 200px 17px #ffffff;
+}
+.i_search1 input{
+	position: relative;
+	width: 185px;
+	height: 37px;
+	left: 10px;
+	top: 4px;
+}
+/* 경로가운데 화살표 이미지박스 */
+.i_search2{
+	width: 40px;
+	height: 47px;
+}
+/* 경로가운데 화살표 이미지 */
+.i_search2 img{
+	display: block;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+/* 경로검색 뒷박스 */
+.i_search3{
+	width: 216px;
+	height: 45px;
+	border: 1px solid #cccccc;
+	background: url(../images/icon_con09.gif) no-repeat 200px 17px #ffffff;
+}
+.i_search3 input{
+	position: relative;
+	width: 185px;
+	height: 37px;
+	left: 10px;
+	top: 4px;
+}
+/* 길찾기 박스 */
+.i_search4{
+	width: 100px;
+	height: 47px;
+	margin-left: 9px;
+	background: #1ed6b1;
+}
+/* 길찾기 돋보기 이미지 및 에이태그 크기 */
+.i_search4 a{
+	display: block;
+	width: 100px;
+	height: 47px;
+	background: url(../images/sch_trigger00.gif) 10px 13px no-repeat;
+}
+.i_search4 a:hover{
+	background: url(../images/sch_trigger00.gif) 10px 13px no-repeat rgba(255,255,255,0.2);
+}
+/* 길찾기 글씨 */
+.i_search4 a span{
+	display: block;
+	color: #ffffff;
+	width: 51.7px;
+	padding-left: 25px;
+	margin: 0 auto;
+	line-height: 47px;
+}
+
+/* 서울매트로 밑에 퀵 아이콘 박스 */
+#seoul_box1{
+	position: absolute;
+	width: 1288px;
+	height: 184px;
+	top: 184px;
+}
+/* 서울매트로 밑에 퀵 아이콘 박스 */
+#seoul_box2{
+	position: absolute;
+	width: 1288px;
+	height: 184px;
+	top: 368px;
+}
+/* 1by1 박스 */
+.qbox{
+	width: 184px;
+	height: 184px;
+}
+/* 1by1 박스 a태그 */
+.qbox a{
+	display: block;
+	width: 184px;
+	height: 184px;
+}
+/* 1by1 박스 호버 */
+.qbox .hc:hover{background: #ffffff; opacity: 0.2; transition-duration: 0.2s;}
+/* b5박스 a태그 오퍼값및 위드값 및 배경 선 */
+.b5 a{width: 368px; z-index: 1; background: url(../images/qbox_line.png) no-repeat; position:absolute; top:0px;}
+/* 1by1 박스 각 이미지 */
+#seoul_box1 .b1{background: url(../images/main_tile_n05.png) no-repeat;}
+#seoul_box1 .b2{background: url(../images/main_tile_n12.png) no-repeat;}
+#seoul_box1 .b3{background: url(../images/main_tile_n04.png) no-repeat;}
+/* 5번박스 크기 및 호버시 이미지 커지는거 */
+#seoul_box1 .b5{width: 368px; overflow: hidden;}
+#seoul_box1 .b5:hover img{transform: scale(1.3,1.3); transition-duration: 0.3s;}
+#seoul_box1 .qbox_b5_bg{background: #333333; opacity: 0.5; position: absolute; top:0; width: 368px; height: 184px; z-index:1;}
+/* 1by1 박스 각 이미지 */
+#seoul_box1 .b6{background: url(../images/main_tile_n09.png) no-repeat;}
+#seoul_box2 .b7{background: url(../images/main_tile_n02.png) no-repeat;}
+#seoul_box2 .b9{background: url(../images/main_tile_n07.png) no-repeat;}
+#seoul_box2 .b10{background: url(../images/main_tile_n13.png) no-repeat;}
+#seoul_box2 .b11{background: url(../images/main_tile_n08.png) no-repeat;}
+#seoul_box2 .b13{background: url(../images/main_tile_n10.png) no-repeat;}
+/* 5번박스 글씨 */
+.qbox_b5_tema{
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 368px;
+	height: 184px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 184px;
+	font-size: 33px;
+	z-index: 1;
+}
+/* 오른쪽 픽스드 사이버스테이션 */
+.siberstation{
+	position: fixed;
+	top: 40%;
+	left:0;
+	width: 45px;
+	height: 194px;
+	background: #4659ab;
+	border-radius: 0 10px 10px 0;
+	box-shadow: 2px 0px 10px #222222;
+}
+/* 사이버 스테이션 휴레프 */
+.siberstation>a{
+	display: block;
+	width: 45px;
+	height: 194px;
+	position: absolute;
+	top:0;
+}
+.siberstation>a:hover{
+	background: rgba(59,87,188,0.8);
+	border-radius: 0 10px 10px 0;
+}
+/* 사이버 스테이션 글자 */
+.siberstation>a>span{
+	display: block;
+	margin: 30px auto;
+	width:20px;
+	font-size: 15px;
+	text-align: center;
+	height: 169px;
+	color: #ffffff;
+	line-height: 17px;
+	font-weight: bold;
+}
+/* 스테이션 및 에로우이미지 */
+.station_arr_img{
+	position: relative;
+	top: -70px;
+	left: 12px;
+	background: url(../images/icon_con10.png) no-repeat;
+	width: 19px;
+	height: 19px;
+}
+/* 에로우이미지 링크 */
+.station_arr_img>a{
+	display: block;
+	width: 19px;
+	height: 19px;
+}
+/* 넥스트페이지 박스 */
+.nextpage{
+	width: 90px;
+	height: 120px;
+	position: fixed;
+	right: 0;
+	top: 47%;
+}
+/* 넥스트페이지 ul */
+.nextpage_ul{
+	width: 85px;
+	height: 105px;
+	margin: 0 auto;
+	position: absolute;
+}
+/* 넥스트페이지 유엘크기 */
+.nextpage li{
+	width: 85px;
+	height: 35px;
+}
+/* 넥스트페이지 에이태그 크기및 글씨 호버전 동그라미 */
+.nextpage a{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/circle_q.png) no-repeat 1px 1px;
+	position: relative;
+	left: 65px;
+	top: 5px;
+	color: rgba(0,0,0,0);
+	font-size: 0;
+}
+/* 넥스트페이지 동그라미 1번 고정 */
+.nextpage .circle1{
+	width: 85px;
+	height: 28px;
+	background: url(../images/bg_menu_active.png) no-repeat;
+	left: 0px;
+	top: 3px;
+	text-align: center;
+	color: #ffffff;
+	font-weight: 600;
+	line-height: 28px;
+	font-size: 1em;
+}
+/* 넥스트페이지 동그라미 2번 호버 */
+.nextpage .circle2:hover{
+	width: 85px;
+	height: 28px;
+	background: url(../images/bg_menu_active.png) no-repeat;
+	left: 0px;
+	top: 3px;
+	text-align: center;
+	color: #ffffff;
+	font-weight: 600;
+	line-height: 28px;
+	font-size: 1em;
+}
+/* 넥스트페이지 동그라미 3번 호버 */
+.nextpage .circle3:hover{
+	width: 85px;
+	height: 28px;
+	background: url(../images/bg_menu_active.png) no-repeat;
+	left: 0px;
+	top: 3px;
+	text-align: center;
+	color: #ffffff;
+	font-weight: 600;
+	line-height: 28px;
+	font-size: 1em;
+}
+
+
+/* --------------------------------------------------------------------------------------- */
+
+/* 푸터박스 배경 */
+#footer{
+	position:fixed;
+	left:0;
+	width: 100%;
+	height: 80px;
+	background: #5b6268;
+	bottom: 0%;
+}
+/* 푸터박스 중앙정렬 */
+#foot{
+	position: relative;
+	width: 1288px;
+	height: 80px;
+	margin: 0 auto;
+}
+/* 푸터글자 사이 선 */
+#foot .foott2{
+	background: url(../images/line_footer.png) 0px 25px no-repeat;
+}
+#foot .foott3{
+	background: url(../images/line_footer.png) 0px 25px no-repeat;
+}
+#foot .foott4{
+	background: url(../images/line_footer.png) 0px 25px no-repeat;
+}
+#foot .foott5{
+	background: url(../images/line_footer.png) 0px 25px no-repeat;
+}
+#foot .foott6{
+	background: url(../images/line_footer.png) 0px 25px no-repeat;
+}
+/* 푸터글자 */
+.foott a{
+	color: #ffffff;
+	font-size: 14px;
+	padding: 0px 20px;
+	font-weight: 600;
+}
+.foott .nonpad{
+	padding: 0 20px 0 0;
+}
+.foott a:hover{
+	text-decoration: underline;
+}
+/* 두번째글자색 */
+#foot .foott2 a{
+	color: #3cc19e;
+}
+/* 푸터글자박스 위치조정 */
+.foot_text{
+	width: 1288px;
+	height: 21px;
+	line-height: 60px;
+}
+/* 카피라이트 위치및 글자 */
+.copyright{
+	clear:both;
+	position: relative;
+	top: -12px;
+	font-size: 14px;
+	letter-spacing: -1px;
+	color: #cccccc;
+}
+/* wa이미지 */
+.wa{
+	position: absolute;
+	left: 83%;
+	top: 17px;
+}
+/* 패밀리박스 크기 및 위치 */
+.family_box{
+	width: 250px;
+	height: 35px;
+	position: absolute;
+	top: 22.5px;
+	left: 98%;
+}
+/* 패밀리사이트 인풋박스 크기 및 보더 */
+.family_box .family_input{
+	width: 204px;
+	height: 33px;
+	border: 1px  solid #91969a;
+	border-right: none;
+}
+/* 패밀리사이트 인풋박스 에이태그 */
+.family_box .family_input a{
+	display: block;
+	width: 189px;
+	height: 33px;
+	background: url(../images/arr_family01.png) 180px 13px no-repeat;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 33px;
+	padding-left: 15px;
+	
+}
+/* 패밀리사이트 인풋박스 에이태그 호버 */
+.family_box .family_input a:hover{
+	text-decoration: underline;
+	background: url(../images/arr_family01.png) 180px 13px no-repeat rgba(255,255,255,0.1);
+}
+/* 패밀리사이트 고박스 크기및 배경색 */
+.family_box .family_go{
+	width: 45px;
+	height: 35px;
+	background: #1ed6b2;
+}
+/* 패밀리사이트 고박스 에이태그 */
+.family_box .family_go a{
+	display: block;
+	width: 45px;
+	height: 35px;
+	color: #ffffff;
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 35px;
+}
+/* 패밀리사이트 고버튼 호버 */
+.family_box .family_go a:hover{
+	background: rgba(255,255,255,0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+﻿<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title>overflow</title>
+	<style>
+		body{
+			margin: 20px 0px 0px 150px;
+			padding: 0px;
+			font-size: 0,7em;
+		}
+		div{
+			width: 200px;
+			border: 1px solid #666666;
+			margin-right: 10px;
+			margin-top: 10px;
+			float: left;
+		}
+		h1{
+			background: url(images/css_design.png) no-repeat;
+			font-size: 1.2em;
+			font-family: arial;
+			height: 400px;
+			text-align: center;
+			margin: 0px;
+			padding: 0px;
+		}
+		#box1{
+			background: #ff6699;
+			overflow: hidden;
+			height: 200px;
+		}
+		#box2{
+			background: #ffcc99;
+			overflow: auto;
+			height: 200px;
+		}
+		#box3{
+			background: #33ccff;
+			overflow: scroll;
+			height: 200px;
+		}
+		#box4{
+			position: relative;
+			background: #66cc33;
+			height: 400px;
+			clear: both;
+		}
+		#box4 h1{
+			position: absolute;
+			clip: rect(0px, 200px, 150px, 0px);
+		}
+		#box5{
+			position: relative;
+			background: #cc99ff;
+			height: 400px;
+		}
+		#box5 h1{
+			position: absolute;
+			clip: rect(150px, 200px, 400px, 0px);
+		}
+	</style>
+</head>
+<body>
+	<div id="box1">
+		<h1>overflow:hidden</h1>
+	</div>
+	<div id="box2">
+		<h1>overflow:auto</h1>
+	</div>
+	<div id="box3">
+		<h1>overflow:scroll</h1>
+	</div>
+	<div id="box4">
+		<h1>clip:rect(0px, 200px, 150px, 0px)</h1>
+	</div>
+	<div id="box5">
+		<h1>clip:rect(150px, 200px, 400px, 0px)</h1>
+	</div>
+</body>
+</html>

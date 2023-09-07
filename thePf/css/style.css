@@ -1,0 +1,459 @@
+body{background: #ffffff;}
+#wrap{width: 100%; position: relative; top: 130px;}
+#header{width: 100%; height: auto;}
+#container{width: 100%; height: auto; background: #f5f5f5;}
+#footer{width: 100%;}
+
+#scroll{width: 200px; height: 100px; font-size: 3em; color: #000;
+position: fixed; top: 30px; right: 0px; z-index:10001; display:none;}
+/* 네비게이션 */
+#gnb{
+	width: 100%; height: auto; position: fixed; top:0;
+	padding: 25px 0 25px 0; z-index:10000; background-color: #ffffff;
+}
+#gnb.on{
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+.gnb_box{width: 1540px; height: auto; margin: 0 auto;}
+.logo{width: 10%; height: auto; float: left;}
+.logo a{
+	background: url(../images/logo2.png) no-repeat;
+	width: 70px;
+	height: 60px;
+}
+.menu{width: 90%; height: auto; float: left;}
+.menu ul{width: 100%; height: auto; float: right;}
+.menu ul li{width: 10%; height: auto; float: left;}
+.menu ul li a{
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	font-size: 1.3em;
+	color: #777777;
+	transition-duration: 0.3s;
+}
+.menu ul li a.on{color: #cbb26a;}
+.menu ul li a.white{color: #ffffff;}
+.menu ul li a:hover{color: #cbb26a;}
+
+
+
+/* 헤더영역 */
+.header_box{width:1540px; height: 790px; margin:0 auto; position: relative;}
+.header_img01{
+	background: url(../images/port_main_011.png) no-repeat;
+	width: 620px;
+	height: 790px;
+	float: left;
+}
+.header_img02{
+	background: url(../images/port_main_03.png) no-repeat;
+	width: 650px;
+	height: 790px;
+	float: right;
+	margin-right: 40px;
+}
+.header_txt{
+	position: absolute;
+	top: 475px;
+	left: 80px;
+	width: 350px;
+	height: 150px;
+	color: #555555;
+	line-height: 170%;
+}
+.header_txt span{display: block; margin-top: 20px; float: right;}
+
+
+.about_box{width: 100%; height: 0px; margin-top: 100px; color: #5c5c5d;}
+
+.about_box_top{width: 1920px; height: 182px; margin: 0 auto; position: relative;}
+.about_bg{width: 100%; height: 103px; background: url(../images/bg0.png) no-repeat;}
+.about_txtImg{width:329px; height:79px; background: url(../images/txt_am.png) no-repeat; left: 100px; position: absolute;}
+
+.about_box_bottom{width: 1540px; height: 400px; margin: 84px auto 84px auto;}
+.about_box_bottom>div{width: 33.3%; height: 100%;}
+.about_box_bottom .wid334{width: 33.4%;}
+.about_box_bottom>div h1{
+	font-size: 2em; font-weight: normal; height: 50px;
+	text-align: center; line-height: 50px;
+}
+.about_box_bottom .about_txt{width: 100%; height: 300px;}
+.about_box_bottom .about_txt ul{height: 90%; margin: 5% auto;}
+.about_box_bottom .about_txt ul.wid01{width: 55%;}
+.about_box_bottom .about_txt ul.wid02{width: 55%;}
+.about_box_bottom .about_txt ul.wid02 li{width: 80%; padding-left: 20%;}
+.about_box_bottom .about_txt ul.wid03{width: 50%;}
+.about_box_bottom .about_txt ul li{
+	width: 100%; height: 50px; font-size: 1.0em; line-height: 50px;
+	font-family: 'NanumGothic', 'Gothic', sans-serif;
+}
+.about_box_bottom .about_txt ul li span{font-weight: bold;}
+.about_box_bottom .about_txt ul li span.fs08{font-size: 0.8em;}
+
+
+
+/* 컨테이너 영역 */
+.skill{width: 1920px; height:442px; background: url(../images/bg1.png) no-repeat; margin: 0 auto;}
+/* 포폴01 */
+.port01{width: 1540px; height: 700px; margin: 60px auto 0 auto; position: relative;}
+.port01 .port01_txtBox{width: 400px; height: 100%; position: absolute; left:-400px;}
+.port01_number{
+	background: url(../images/011.png) no-repeat;
+	width: 122px; height: 116px; position: absolute; top: 50px;
+	left: 278px;
+}
+.port01_button{
+	width: 78px; height: 39px; position: absolute; top: 250px; left: 322px;
+}
+.port01_btn1{background: url(../images/i_btnoff.png) center center no-repeat; width: 34px; height: 39px; margin-right: 10px;}
+.port01_btn2{background: url(../images/ex_btnoff.png) center center no-repeat; width: 34px; height: 39px;}
+.port01_txt{
+	width: 300px; height: 300px; position: absolute; text-align: justify;
+	top: 300px; left: 100px; line-height: 150%; font-size: 0.95em;
+}
+.port01_txt p span{background:#e5d8b2;}
+.port01_txt p span::selection{background: #dfd0a2; color: #000000;}
+.port01_txt p::selection{background: #dfd0a2; color: #000000;}
+.port01_txtt p::selection{background: #dfd0a2; color: #000000;}
+.port01_txtt{
+	width: 300px; height: 300px; position: absolute; text-align: justify;
+	top: 300px; left: 100px; line-height: 170%; font-size: 0.95em;
+	display:none;
+}
+.port01_txtt p .linkpage{display: inline;}
+.port01_txtt p .linkpage:hover {border-bottom: 1px solid #535353; transition-duration: 0.2s;}
+.port01_txtt p .download{width: 50%; height: 45px; background: none; margin: 30px 0 0 0; text-align: center; line-height: 45px; font-weight: bold; color: #535353; border: 2px solid #535353;}
+.port01_txtt p .download:hover{background: #535353; color: #ffffff; transition-duration: 0.5s;}
+.port01_btn1.onbtn{background: url(../images/i_btnon.png) center center no-repeat;}
+.port01_btn2.onbtn{background: url(../images/ex_btnon.png) center center no-repeat;}
+.port01_btn1:hover{background: url(../images/i_btnon.png) center center no-repeat;}
+.port01_btn2:hover{background: url(../images/ex_btnon.png) center center no-repeat;}
+
+.port01 .port01_imgBox{width: 1140px; height: 100%; position: absolute; right:-600px;}
+.port01 .port01_imgBox h2{ width: 100%; height: 50px; color: #5c5c5d; font-size: 2.5em; text-align: right; line-height: 50px;}
+.port01 .port01_imgBox .port01_img{
+	background: url(../images/port02_1.png) no-repeat;
+	width: 1000px; height: 500px; background-size: cover;
+	box-shadow: 50px 50px 50px rgba(50,50,50,0.5);
+	position: absolute; top: 50px; right: 0;
+	z-index:2;
+}
+.port01 .port01_imgBox .port01_img a{width: 100%; height: 100%; transition-duration:0.5s; font-size: 3em; text-align:center; line-height: 500px; color: #ffffff; font-weight: bold; opacity:0; letter-spacing: 10px;}
+.port01 .port01_imgBox .port01_img:hover a{opacity: 1; background: rgba(0,0,0,0.3);}
+
+.port01 .port01_bgTxt{background: url(../images/bgcs2.png) no-repeat; width: 257px; height:748px; position: absolute; right: -170px; top: -100px;}
+
+/* 포폴 02 */
+.port02{width: 1540px; height: 700px; margin: 60px auto 0 auto; position: relative;}
+.port02 .port02_imgBox{width: 1140px; height: 100%; position: absolute; left: -600px;}
+.port02 .port02_imgBox h2{ width: 100%; height: 50px; color: #5c5c5d; font-size: 2.5em; text-align: left; line-height: 50px;}
+.port02 .port02_imgBox .port02_img{
+	background: url(../images/port01_1.png) no-repeat;
+	width: 1000px; height: 500px; background-size: cover;
+	box-shadow: -50px 50px 50px rgba(50,50,50,0.5);
+	position: absolute; top: 50px; left: 0;
+	z-index:2;
+}
+.port02 .port02_imgBox .port02_img a{width: 100%; height: 100%; transition-duration:0.5s; font-size: 3em; text-align:center; line-height: 500px; color: #ffffff; font-weight: bold; opacity:0; letter-spacing: 10px;}
+.port02 .port02_imgBox .port02_img:hover a{opacity: 1; background: rgba(0,0,0,0.3);}
+
+.port02 .port02_txtBox{width: 400px; height: 100%; position: absolute; right: -400px;}
+.port02_number{
+	background: url(../images/022.png) no-repeat;
+	width: 162px; height: 115px; position: absolute; top: 50px;
+	right: 238px;
+}
+.port02_button{
+	width: 78px; height: 39px; position: absolute; top: 250px; right: 322px;
+}
+.port02_btn1{background: url(../images/i_btnoff.png) center center no-repeat; width: 34px; height: 39px; margin-right: 10px;}
+.port02_btn2{background: url(../images/ex_btnoff.png) center center no-repeat; width: 34px; height: 39px;}
+.port02_txt{
+	width: 300px; height: 300px; position: absolute; text-align: justify;
+	top: 300px; right: 100px; line-height: 150%; font-size: 0.95em;
+}
+.port02_txt p span{background:#e5d8b2;}
+.port02_txt p span::selection{background: #dfd0a2; color: #000000;}
+.port02_txt p::selection{background: #dfd0a2; color: #000000;}
+.port02_txtt p::selection{background: #dfd0a2; color: #000000;}
+.port02_txtt{
+	width: 300px; height: 300px; position: absolute; text-align: justify;
+	top: 300px; right: 100px; line-height: 150%; font-size: 0.95em;
+	display:none;
+}
+.port02_txtt p .linkpage{display: inline;}
+.port02_txtt p .linkpage:hover {border-bottom: 1px solid #535353; transition-duration: 0.2s;}
+.port02_txtt p .download{width: 50%; height: 45px; background: none; margin: 30px 0 0 0; text-align: center; line-height: 45px; font-weight: bold; color: #535353; border: 2px solid #535353;}
+.port02_txtt p .download:hover{background: #535353; color: #ffffff; transition-duration: 0.5s;}
+.port02_btn1.onbtn{background: url(../images/i_btnon.png) center center no-repeat;}
+.port02_btn2.onbtn{background: url(../images/ex_btnon.png) center center no-repeat;}
+.port02_btn1:hover{background: url(../images/i_btnon.png) center center no-repeat;}
+.port02_btn2:hover{background: url(../images/ex_btnon.png) center center no-repeat;}
+
+.port02 .port02_bgTxt{background: url(../images/bgjq2.png) no-repeat; width: 257px; height:894px; position: absolute; left: -170px; top: -170px;}
+
+/* 포폴03 */
+.port03{width: 1540px; height: 700px; margin: 60px auto 0 auto; position: relative;}
+.port03 .port03_txtBox{width: 400px; height: 100%; position: absolute; left: -400px;}
+.port03_number{
+	background: url(../images/033.png) no-repeat;
+	width: 224px; height: 117px; position: absolute; top: 55px;
+	left: 176px;
+}
+.port03_button{
+	width: 78px; height: 39px; position: absolute; top: 250px; left: 322px; z-index:2;
+}
+.port03_btn1{background: url(../images/i_btn1off.png) center center no-repeat; width: 34px; height: 39px; margin-right: 10px;}
+.port03_btn2{background: url(../images/ex_btn1off.png) center center no-repeat; width: 34px; height: 39px;}
+.port03_txt{
+	width: 300px; height: 300px; position: absolute; text-align: justify; color: #ffffff;
+	top: 300px; left: 100px; line-height: 150%; font-size: 0.95em; z-index:2;
+}
+.port03_txt p span{background:#ffffff; color: #3d3d3d;}
+.port03_txt p span::selection{background: #ffffff; color: #5d5d5d;}
+.port03_txt p::selection{background: #ffffff; color: #5d5d5d;}
+.port03_txtt p::selection{background: #ffffff; color: #5d5d5d;}
+.port03_txtt{
+	width: 300px; height: 300px; position: absolute; text-align: justify; color: #ffffff;
+	top: 300px; left: 100px; line-height: 150%; font-size: 0.95em; z-index:2;
+	display:none;
+}
+.port03_txtt p .linkpage{display: inline;}
+.port03_txtt p .linkpage:hover {border-bottom: 1px solid #ffffff; transition-duration: 0.2s;}
+.port03_txtt p .download{width: 50%; height: 45px; background: none; margin: 30px 0 0 0; text-align: center; line-height: 45px; font-weight: bold; color: #ffffff; border: 2px solid #ffffff;}
+.port03_txtt p .download:hover{background: #ffffff; color: #5d5d5d; transition-duration: 0.5s;}
+.port03_btn1.onbtn1{background: url(../images/i_btn1on.png) center center no-repeat;}
+.port03_btn2.onbtn1{background: url(../images/ex_btn1on.png) center center no-repeat;}
+.port03_btn1:hover{background: url(../images/i_btn1on.png) center center no-repeat;}
+.port03_btn2:hover{background: url(../images/ex_btn1on.png) center center no-repeat;}
+
+.port03 .port03_imgBox{width: 1140px; height: 100%; position: absolute; right:0;}
+.port03 .port03_imgBox h2{ width: 100%; height: 50px; color: #5c5c5d; font-size: 2.5em; text-align: right; line-height: 50px;}
+.port03_img01{
+	background: url(../images/nu1.png) no-repeat; width: 650px; height: 547px;
+	position: absolute; z-index: 2; right: 340px;
+}
+.port03_img02{
+	background: url(../images/nu2.png) no-repeat; width: 608px; height: 386px;
+	position: absolute; z-index: 3; right: -100px; top: 300px;
+}
+.port03_img03{
+	background: url(../images/nu3.png) no-repeat; width: 218px; height: 350px;
+	position: absolute; z-index: 3; right: 500px; top: 365px;
+}
+.port03_img01_1{
+	width: 590px; height: 335px; background: url(../images/mfg_slide01.png) 0 0 no-repeat;
+	position: absolute; z-index: 2; top: 93px; right: 372px;
+	overflow: hidden; transition-duration: 2s;
+}
+.port03_img01_1:hover{background-position: 0 -1196px;}
+.port03_img02_1{
+	width: 435px; height: 275px; background: url(../images/mfg_slide02.png) 0 0 no-repeat;
+	position: absolute; z-index: 3; top: 360px; right: -13px;
+	overflow: hidden; transition-duration: 2s;
+}
+.port03_img02_1:hover{background-position: 0 -1094px;}
+.port03_img03_1{
+	width: 126px; height: 248px; background: url(../images/mfg_slide03.png) 0 0 no-repeat;
+	position: absolute; z-index: 3; top: 411px; right: 546px;
+	overflow: hidden; transition-duration: 2s;
+}
+.port03_img03_1:hover{background-position: 0 -435px;}
+
+.pt03_click{
+	color: #ffffff; width: 200px; height: 70px; font-size: 2em;
+	position: absolute; top: 150px; right: 50px; z-index: 3;
+	animation-name:ani; animation-duration: 1s;
+	animation-iteration-count:infinite; animation-direction: alternate;
+}
+
+.port03_bgTxt{background: url(../images/bg2.png) no-repeat; width: 1920px; height:915px; position: absolute; top: 20px; right: -200px; opacity:0.5;}
+
+
+/* 포폴04 */
+.port04{width: 1540px; height: 700px; margin: 260px auto 0 auto; position: relative;}
+.port04 .port04_txtBox{width: 400px; height: 100%; position: absolute; left:-400px;}
+.port04_number{
+	background: url(../images/04.png) no-repeat;
+	width: 198px; height: 118px; position: absolute; top: 50px;
+	left: 202px;
+}
+.port04_button{
+	width: 78px; height: 39px; position: absolute; top: 250px; left: 322px;
+}
+.port04_btn1{background: url(../images/i_btnoff.png) center center no-repeat; width: 34px; height: 39px; margin-right: 10px;}
+.port04_btn2{background: url(../images/ex_btnoff.png) center center no-repeat; width: 34px; height: 39px;}
+.port04_txt{
+	width: 300px; height: 300px; position: absolute; text-align: justify;
+	top: 300px; left: 100px; line-height: 150%; font-size: 0.95em;
+}
+.port04_txt p span{background:#e5d8b2;}
+.port04_txt p span::selection{background: #dfd0a2; color: #000000;}
+.port04_txt p::selection{background: #dfd0a2; color: #000000;}
+.port04_txtt p::selection{background: #dfd0a2; color: #000000;}
+.port04_txtt{
+	width: 300px; height: 300px; position: absolute; text-align: justify;
+	top: 300px; left: 100px; line-height: 150%; font-size: 0.95em;
+	display:none;
+}
+.port04_txtt p .download{width: 50%; height: 45px; background: none; margin: 30px 0 0 0; text-align: center; line-height: 45px; font-weight: bold; color: #535353; border: 2px solid #535353;}
+.port04_txtt p .download:hover{background: #535353; color: #ffffff; transition-duration: 0.5s;}
+.port04_btn1.onbtn{background: url(../images/i_btnon.png) center center no-repeat;}
+.port04_btn2.onbtn{background: url(../images/ex_btnon.png) center center no-repeat;}
+.port04_btn1:hover{background: url(../images/i_btnon.png) center center no-repeat;}
+.port04_btn2:hover{background: url(../images/ex_btnon.png) center center no-repeat;}
+
+.port04 .port04_imgBox{width: 1140px; height: 100%; position: absolute; right:-600px;}
+.port04 .port04_imgBox h2{ width: 100%; height: 50px; color: #5c5c5d; font-size: 2.5em; text-align: right; line-height: 50px;}
+.port04 .port04_imgBox .port04_img{
+	background: url(../images/port03.png) no-repeat;
+	width: 1000px; height: 500px; background-size: cover;
+	box-shadow: 50px 50px 50px rgba(50,50,50,0.5);
+	position: absolute; top: 50px; right: 0;
+	z-index:2;
+}
+.port04 .port04_imgBox .port04_img a{width: 100%; height: 100%; transition-duration:0.5s; font-size: 3em; text-align:center; line-height: 500px; color: #ffffff; font-weight: bold; opacity:0; letter-spacing: 10px;}
+.port04 .port04_imgBox .port04_img:hover a{opacity: 1; background: rgba(0,0,0,0.3);}
+
+.port04 .port04_bgTxt{background: url(../images/bgpa.png) no-repeat; width: 257px; height:955px; position: absolute; right: -170px; top: -180px;}
+
+
+/* 포폴 05 */
+.port05{width: 1540px; height: 700px; margin: 60px auto 0 auto; position: relative;}
+.port05 .port05_imgBox{width: 1140px; height: 100%; position: absolute; left: -600px;}
+.port05 .port05_imgBox h2{ width: 100%; height: 50px; color: #5c5c5d; font-size: 2.5em; text-align: left; line-height: 50px;}
+.port05 .port05_imgBox .port05_img{
+	background: url(../images/port04.png) no-repeat;
+	width: 1000px; height: 500px; background-size: cover;
+	box-shadow: -50px 50px 50px rgba(50,50,50,0.5);
+	position: absolute; top: 50px; left: 0;
+	z-index:2;
+}
+.port05 .port05_imgBox .port05_img a{width: 100%; height: 100%; transition-duration:0.5s; font-size: 3em; text-align:center; line-height: 500px; color: #ffffff; font-weight: bold; opacity:0; letter-spacing: 10px;}
+.port05 .port05_imgBox .port05_img:hover a{opacity: 1; background: rgba(0,0,0,0.3);}
+
+.port05 .port05_txtBox{width: 400px; height: 100%; position: absolute; right: -400px;}
+.port05_number{
+	background: url(../images/05.png) no-repeat;
+	width: 192px; height: 117px; position: absolute; top: 50px;
+	right: 208px;
+}
+.port05_button{
+	width: 78px; height: 39px; position: absolute; top: 250px; right: 322px;
+}
+.port05_btn1{background: url(../images/i_btnoff.png) center center no-repeat; width: 34px; height: 39px; margin-right: 10px;}
+.port05_btn2{background: url(../images/ex_btnoff.png) center center no-repeat; width: 34px; height: 39px;}
+.port05_txt{
+	width: 300px; height: 300px; position: absolute; text-align: justify;
+	top: 300px; right: 100px; line-height: 150%; font-size: 0.95em;
+}
+.port05_txt p span{background:#e5d8b2;}
+.port05_txt p span::selection{background: #dfd0a2; color: #000000;}
+.port05_txt p::selection{background: #dfd0a2; color: #000000;}
+.port05_txtt p::selection{background: #dfd0a2; color: #000000;}
+.port05_txtt{
+	width: 300px; height: 300px; position: absolute; text-align: justify;
+	top: 300px; right: 100px; line-height: 150%; font-size: 0.95em;
+	display:none;
+}
+.port05_txtt p .download{width: 50%; height: 45px; background: none; margin: 30px 0 0 0; text-align: center; line-height: 45px; font-weight: bold; color: #535353; border: 2px solid #535353;}
+.port05_txtt p .download:hover{background: #535353; color: #ffffff; transition-duration: 0.5s;}
+.port05_btn1.onbtn{background: url(../images/i_btnon.png) center center no-repeat;}
+.port05_btn2.onbtn{background: url(../images/ex_btnon.png) center center no-repeat;}
+.port05_btn1:hover{background: url(../images/i_btnon.png) center center no-repeat;}
+.port05_btn2:hover{background: url(../images/ex_btnon.png) center center no-repeat;}
+
+.port05 .port05_bgTxt{background: url(../images/bgjq2.png) no-repeat; width: 257px; height:894px; position: absolute; left: -170px; top: -170px;}
+
+
+/* 포폴06 */
+.port06{width: 1540px; height: 700px; margin: 60px auto 0 auto; position: relative;}
+.port06 .port06_txtBox{width: 400px; height: 100%; position: absolute; left: -400px;}
+.port06_number{
+	background: url(../images/06.png) no-repeat;
+	width: 145px; height: 117px; position: absolute; top: 55px;
+	left: 255px; z-index:2;
+}
+.port06 .port06_imgBox .port06_img{
+	background: url(../images/port05.png) no-repeat;
+	width: 1000px; height: 500px; background-size: cover;
+	box-shadow: 50px 50px 50px rgba(50,50,50,0.5);
+	position: absolute; top: 50px; right: 0;
+	z-index:2;
+}
+.port06 .port06_imgBox .port06_img a{width: 100%; height: 100%; transition-duration:0.5s; font-size: 3em; text-align:center; line-height: 500px; color: #ffffff; font-weight: bold; opacity:0; letter-spacing: 10px;}
+.port06 .port06_imgBox .port06_img:hover a{opacity: 1; background: rgba(0,0,0,0.3);}
+
+.port06_button{
+	width: 78px; height: 39px; position: absolute; top: 250px; left: 322px; z-index:2;
+}
+.port06_btn1{background: url(../images/i_btn1off.png) center center no-repeat; width: 34px; height: 39px; margin-right: 10px;}
+.port06_btn2{background: url(../images/ex_btn1off.png) center center no-repeat; width: 34px; height: 39px;}
+.port06_txt{
+	width: 300px; height: 300px; position: absolute; text-align: justify; color: #ffffff;
+	top: 300px; left: 100px; line-height: 150%; font-size: 0.95em; z-index:2;
+}
+.port06_txt p span{background:#ffffff; color: #3d3d3d;}
+.port06_txt p span::selection{background: #ffffff; color: #5d5d5d;}
+.port06_txt p::selection{background: #ffffff; color: #5d5d5d;}
+.port06_txtt p::selection{background: #ffffff; color: #5d5d5d;}
+.port06_txtt{
+	width: 300px; height: 300px; position: absolute; text-align: justify; color: #ffffff;
+	top: 300px; left: 100px; line-height: 150%; font-size: 0.95em; z-index:2;
+	display:none;
+}
+.port06_txtt p .download{width: 50%; height: 45px; background: none; margin: 30px 0 0 0; text-align: center; line-height: 45px; font-weight: bold; color: #ffffff; border: 2px solid #ffffff;}
+.port06_txtt p .download:hover{background: #ffffff; color: #5d5d5d; transition-duration: 0.5s;}
+.port06_btn1.onbtn1{background: url(../images/i_btn1on.png) center center no-repeat;}
+.port06_btn2.onbtn1{background: url(../images/ex_btn1on.png) center center no-repeat;}
+.port06_btn1:hover{background: url(../images/i_btn1on.png) center center no-repeat;}
+.port06_btn2:hover{background: url(../images/ex_btn1on.png) center center no-repeat;}
+.port06 .port06_imgBox{width: 1140px; height: 100%; position: absolute; right:-600px;}
+.port06 .port06_imgBox h2{ width: 100%; height: 50px; color: #5c5c5d; font-size: 2.5em; text-align: right; line-height: 50px;}
+.port06_bgTxt{background: url(../images/bg3.png) no-repeat; width: 1920px; height:594px; position: absolute; top: 125px; right: -200px; opacity:0.5;}
+
+
+/* 화살표 애니매이션 */
+@keyframes ani{
+	0%{right: 50px;}
+	100%{right: 80px;}
+	from{right: 50px;}
+	to{right: 80px;}
+}
+
+.port_button>div>a{width: 100%; height: 100%;}
+
+/* 푸터영역 */
+#footer{width: 100%; height: 800px; background: #444444; margin-top: 50px; overflow: hidden;}
+.footer_box{
+	width: 1400px; height: 670px; position: relative; top: 40px; margin: 0 auto;
+	opacity: 0;
+}
+.ef{width: 1400px; height: 600px; color: #ffffff; text-align: center;}
+.ef .ef_tit{margin-bottom: 10px;}
+.ef .ep_pic{width: 700px; height: 550px; background: url(../images/ep2.png) center center no-repeat;}
+.ef .ep_txt{width: 700px; height: 550px; box-sizing: border-box; border: 2px solid #ffffff; position: relative; overflow: hidden;}
+.ef .ep_txt .ep_txtbox{text-align: justify; width: 600px; height: 450px; position: relative; margin: 0 auto; top: 50px; font-size: 1.1em; line-height: 2em;}
+.ef .ep_txt .ep_txtbox .ep_tit{font-weight: bold; display: block; text-align: center; font-size: 1.1em; height: 60px; line-height: 60px;}
+.ef .ep_txt .borderSkew{display: block; position: absolute; width: 100px; height: 150px; transform: skewX(-45deg); background: #ffffff; right:-50px;}
+
+.call{text-align: center; color: #ffffff; font-weight: bold; width: 1400px; height: 50px; line-height: 50px; margin-top: 20px;}
+.call .tel{font-size: 1.4em; width: 320px; margin: 0 10px 0 20px; background: #c5a957; border-radius: 10px 0 10px 0;}
+.call .mail{font-size: 1.2em; width: 320px; margin: 0 20px 0 10px; background: #c5a957; border-radius: 10px 0 10px 0;}
+.call .diarygo{font-size: 1.2em; width: 700px; box-sizing: border-box; border: 2px solid #ffffff; color: #ffffff;}
+.call .diarygo:hover{background: #ffffff; border:none; color: #444444; transition-duration: 0.5s;}
+#top{
+	width: 50px; height: 50px; position: fixed; bottom: 0; right: 0; background: #ccb36a; color: #ffffff; font-size: 2em; line-height: 50px; text-align: center;
+	overflow: hidden; z-index: 100; font-weight: bold; display:none; cursor:pointer;
+	opacity: 0.7;
+}
+#top span{
+	font-size: 0.6em; font-weight: normal; line-height: 30px;
+}
+
+
+
+
+

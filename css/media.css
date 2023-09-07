@@ -1,0 +1,75 @@
+@media screen and (min-width:1200px) and (max-width:1600px){
+    
+    
+    /* 네비게이션 */
+
+    .gnb_box{width: 1100px; height: 70px; margin: 0 auto;}
+    
+    .logo{width: 15%;}
+    .logo a{width: 150px; background-size: cover;}
+    .menu{width: 85%;}
+    
+    
+    /* 헤더영역 */
+
+    .header_box{width:100%; height: 800px; margin:0 auto; position: relative; background: url(../images/header_bg.png) center center no-repeat;}
+    .header_box_txt{width: 100%; height: auto; margin: 0 auto; position: relative; top:120px;}
+    .header_txt01{font-size: 25px; letter-spacing: 5px; font-weight: 800;}
+    .header_txt02{font-size: 80px; letter-spacing: 5px; font-weight: 800;}
+    .header_txt03{font-size: 25px; letter-spacing: 3px; font-weight: 800; margin-top: 50px;}
+
+
+    /* 컨테이너 영역 */
+
+    .port_wrap{width: 100%; height: 700px; margin: 50px auto 0 auto; position: relative;}
+
+    .port_box{width: 1100px; height: 100%; margin: 0 auto; position: relative;}
+
+    
+    /************************* port00 *************************/
+    
+    .port00_txtBox{width: 1100px;}
+    
+    
+    /************************* port01 *************************/
+    
+    .port01_box{width: 1100px;}
+    
+    
+    /************************* port03 *************************/
+    
+    .port03_box_ut{width: 1100px; height: auto; padding-top: 50px; margin: 0 auto;}
+    
+    
+    
+    /************************* port05 *************************/
+    
+    .port05_box_youtube{width: 1100px; height: 100%; margin: 0 auto; position: relative; overflow: hidden;}
+    
+    
+    /************************* port07 *************************/
+    
+    .port07_box{width: 1500px; height: 100%; margin: 0 auto;}
+    
+
+    /************************* footer *************************/
+
+    .footer_box{width: 1100px; height: 100%; margin: 50px auto; position: relative; }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

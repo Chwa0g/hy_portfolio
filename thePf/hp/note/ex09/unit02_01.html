@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> 투명도를 이용한 롤오버 이미지 만들기 </title>
+		<meta charset="UTF-8" />
+		<style type="text/css">
+			body {
+				font:0.95em Arial,sans-serif;
+				margin:50px 0px;
+				}
+			nav {
+				width:500px;
+				margin:0px auto;
+				}
+			h1 {
+				text-shadow:0px 0px 5px #666;
+				text-align:center;
+				font-size:3em;
+				letter-spacing:5px;
+				color:#d81b21;
+				text-transform:uppercase;
+				}
+			a {
+				text-decoration:none;
+				}
+			img {
+				border:none;
+				}
+			ul, li {
+				margin:0px;
+				padding:0px;
+				}
+			/* Rollover Design */
+			/* 제트인덱스는 보이는 순위? */
+			.color{
+				width: 90px;
+				height: 0px;
+				background-color: #666666;
+				text-align: center;
+				padding: 5px;
+				position: relative;
+				z-index: 1;
+				opacity: 0.5;
+				left: 0;
+				top: 0;
+			}
+			.color span{
+				position: relative;
+				display: block;
+				top:-93px;
+				z-index:2;
+				color: #ffffff;
+				font-weight: bold;
+			}
+			#gallery{
+				list-style: none;
+			}
+			#gallery li{
+				float: left;
+				width: 100px;
+				border: 2px solid #000000;
+				margin-left: 5px;
+			}
+			/* visibility: hidden; 은 숨기는 거 */
+			#gallery li a .color{
+				visibility: hidden;
+			}
+			/* visibility: visible; 은 보이는거 (호버에 보임) */
+			#gallery li a:hover .color{
+				visibility: visible;
+				height: 21px;
+			}
+			/* 이미지 블럭화 시키고 플롯래프트 해서 옆에 붙이고 오퍼값이랑 커서 손가락 모양 */
+			#gallery li a img{
+				display: block;
+				width: 100px;
+				height: 100px;
+				float: left;
+				opacity: 0.3;
+				cursor: pointer;
+			}
+			/* 이미지에 호버하면 이미지 오퍼값 100퍼 되는거 */
+			#gallery li a:hover img{
+				opacity: 1;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<h1>C/S/S/   s/h/o/e/s -  s/h/o/p</h1>
+		</header>
+		<nav>
+				<ul id="gallery">
+					<li href=""><a><img src="images/bag_hotpink.png" alt="hotPink" /><div class="color"><span>Hot Pink</span></div></a></li> 
+					<li href=""><a><img src="images/bag_navy.png" alt="Navy" /><div class="color"><span>Navy</span></div></a></li>  
+					<li href=""><a><img src="images/bag_white.png" alt="white" /><div class="color"><span>White</span></div></a></li> 
+				</ul>
+		</nav>
+	</body>
+</html>

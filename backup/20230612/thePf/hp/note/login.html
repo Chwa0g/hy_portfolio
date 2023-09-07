@@ -1,0 +1,116 @@
+﻿<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<style>
+		*{margin: 0px; padding: 0px;}
+		body{
+			background:url(metro.jpg)
+		}
+		h1{
+			color: #002db3;
+			font-size: 3em;
+			margin-top: 100px;
+			margin-left: 110px;
+		}
+		#loginForm fieldset{
+				background: url(crt.gif) no-repeat 30px 300px;
+				width: 300px;
+				height: 500px;
+				border: 5px solid #2d00b3;
+				padding: 50px;
+				border-radius: 15px;
+				margin-left: 50px;
+				margin-top: 50px;
+		}
+		#userId, #userPWD{
+				border-style: none;
+				width: 250px;
+				border-bottom: 1px solid #999999;
+				margin-bottom: 5px;
+				margin-left: 15px;
+				padding: 5px;
+		}
+		#userId:hover, #userPWD:hover{
+				background: #efefef;
+		}
+		#userId:focus, #userPWD:focus{
+				background: #dfefff;
+		}
+		#login{
+				float:left;
+		}
+		#btn1{
+				clear: both;
+				margin-left: 45px;
+				padding: 10px 20px;
+		}
+		#btn1 label{
+				font-size: 12px;
+				vertical-align: top;
+				margin-left: 2px;
+				font-weight: bold;
+		}
+		#btnLogin{
+				display: block;
+				background: #4c79ff;
+				width: 260px;
+				height: 50px;
+				border-style: none;
+				position: relative;
+				float: bottom;
+				color: #ffffff;
+				font-size: 2em;
+				margin-left: 15px;
+		}
+		#btnLogin:hover{
+				background: #4ca6ff;
+		}
+		#btn2{
+				margin-left: 5px;
+				margin-top: 10px;
+				padding: 10px;
+		}
+			#btn2 input{
+				background: #ffffff;
+				border-style: none;
+				border-radius: 5px;
+				color: #575748;
+				padding: 5px 15px;
+				font-weight: bold;
+				margin-top: -10px;
+			}
+			#btn2 input:hover{
+				background: #73b9ff;
+				color: #ffffff;
+			}
+	</style>
+	<title>로그인페이지</title>
+</head>
+<body>
+			<form id="loginForm" method="post" action="#">
+			<h1>Metro Login</h1>
+			<fieldset>	
+				<div id="login">
+					<p>
+						<input type="text" id="userId" placeholder="ID" />
+					</p>
+					<p>
+						<input type="password" id="userPWD" placeholder="Password" />
+					</p>
+				</div>
+				<p id="btn1">
+					<input type="checkbox" id="saveId" value="savedIdYes" />
+					<label for="saveId">아이디저장</label>	
+					<input type="checkbox" id="autoLogin" value="secureYes" />
+					<label for="autoLogin">자동로그인</label>	
+				</p>
+				<input type="submit" value="Login" id="btnLogin" />
+				<p id="btn2">
+					<input type="button" value="회원가입" id="btnJoin" />
+					<input type="button" value="아이디/비밀번호 찾기" id="btnSearch" />
+				</p>
+			</fieldset>
+			</form>
+</body>
+</html>

@@ -1,0 +1,87 @@
+.video{width: 100%; height: 100%; position: fixed; top:-60px; left:0;}
+.video video{width: 100%; min-width: 1900px;}
+#header{width: 300px; height: 180px; position: fixed; z-index:15; left: 0;}
+
+.logo{width: 300px; height: 180px; position: fixed; z-index: 16; margin-top: 10px;}
+.logo a{width: 185px; height: 75px; margin-left: 15px;}
+.logo img{width: 100%; height: 100%;}
+
+.header_box{width: 100%; background: rgba(255,255,255,1); height: 300px; transition: all 0.5s; position: fixed; z-index: 15; transform:skewY(-40deg); top:-820px; left:0;}
+#header:hover .header_box{transition: all 0.5s; transform:none; top:0; background: rgba(255,255,255,0.7); height: 100px;}
+.header_box .logobg{width: 15%; height: 100px; background: #ffffff;}
+.header_box>ul{width: 85%; height: 100px; }
+.header_box>ul>li{float: left; width: 20%; text-align: center; line-height: 100px; position: relative; height: 100px; overflow: hidden;}
+.header_box>ul>li>a{font-size: 1.3em; font-weight: bold; color: #888888; transition: all 0.5s; position: absolute; left:0; top:0; width: 100%; height: 100%; z-index: 14;}
+.header_box>ul>li>a:hover{ color: #44b2fc;}
+.header_box>ul>li>span{display: block; position: absolute; width: 500px; height: 500px; transform:skewY(-40deg);background:rgba(255,255,255,0.8); left:-500px; transition: all 0.5s; top: -300px; z-index: 13;}
+.header_box>ul>li:hover span{left:0px;}
+
+
+#btn{width: 200px; height: 200px; position: fixed; right:0; top: 50%; margin-top: -100px; z-index: 8;}
+#btn>ul{width: 200px; height: 200px; }
+#btn>ul>li{width: 200px; height: 50px; margin-top: 20px; position: relative;}
+#btn>ul>li>a{width: 180px; height: 50px; text-align: left; padding-left: 20px; line-height: 50px; font-weight: bold; color: #555555; background: rgba(255,255,255,0.5); position: absolute; left: 40px; transition: all 0.5s; border-radius: 10px 0 0 10px;}
+#btn>ul>li:hover a{color: #333333; background: rgba(255,255,255,0.8); box-shadow: 0 0 5px #aaaaaa; left:0;}
+#btn>ul>li>a.active{color: #333333; background: rgba(255,255,255,0.8); box-shadow: 0 0 5px #aaaaaa; left:0;}
+
+.more{width: 500px; height: 500px; position: fixed; z-index: 10; bottom:-500px; left:-100px; background: #fff; transform:skewY(40deg); transition: all 0.4s; cursor:pointer;}
+.more:hover{bottom:-470px; left:-70px; }
+.more i{font-size: 2.5em; position: relative; top: 40px; left: 120px; transform:skewY(-40deg)!important; transition: all 0.5s; color: #888888; font-weight: 200;}
+.more:hover i{font-size: 3em; left: 100px; top: 70px;}
+.more_bg{width: 3000px; height: 3000px; position: fixed; background: rgba(255,255,255,0.6); z-index: 8; transform:skewY(40deg); left: -1920px; top: 1920px; transition:0.8s;}
+.more i.fa-bars{}
+.more i.fa-times{}
+.more_box{width: 1300px; height: 700px; position: fixed; left:50%; top: 50%; margin-left: -650px; margin-top: -350px; z-index: 11; display: none;}
+.more_img{width: 700px; height: 700px; position: relative;}
+.more_img>img{width: 600px; height: 600px; display: block; margin: 0 auto; top: 50px; position: relative;}
+.more_view01{width: 1000px; height: 0px; position: absolute; transform:skewY(-40deg); top:-300px; overflow:hidden;}
+.q7bg01{position: absolute; width: 265px; height: 521px; background: url(../images/q7bg01.jpg); background-size: cover; top:262px; left: 218px; border-radius: 18px; transform:skewY(40deg)!important; }
+
+.more_view02{width: 1000px; height: 0px; position: absolute; transform:skewY(-40deg); top:-300px; overflow:hidden;}
+.q7bg02{position: absolute; width: 265px; height: 521px; background: url(../images/q7bg02.png); background-size: 100% 100%; top:262px; left: 218px; border-radius: 18px; transform:skewY(40deg)!important; }
+
+.more_view03{width: 1000px; height: 0px; position: absolute; transform:skewY(-40deg); top:-300px; overflow:hidden;}
+.q7bg03{position: absolute; width: 265px; height: 521px; background: url(../images/q7bg03.jpg) no-repeat; background-size: auto 100%;  top:262px; left: 218px; border-radius: 18px; transform:skewY(40deg)!important; }
+
+.more_txt{width: 600px; height: 700px;  position: relative;}
+
+.volume{width: 300px; height: 300px; position: absolute; bottom:0; left: 200px; }
+.voline{width: 210px; height: 210px; background: rgba(50,50,50,0.7); border-radius: 105px; position: relative; margin: 0 auto; top: 55px; z-index: 13; overflow: hidden;}
+.voline>span{ position: absolute; transition: all 0.5s; background: rgba(0,200,255,1);}
+.volbg01{width: 130px; height: 0px; left:-20px; transform:skewY(20deg); display: block; top: 170px;}
+.volbg02{width: 0px; height: 130px; left: 30px; display:block;}
+.volbg03{width: 140px; height: 0px; left: 100px; top: 38px; transform:skewY(15deg); display: block;}
+
+.volumebg{width: 180px; height: 180px; background: #ffffff; border-radius: 90px; position:absolute; left: 60px; top: 70px; z-index: 14; display:block; transition: all 0.5s;}
+.volumebtn{width: 25px; height: 25px; background: #ffffff; box-shadow: 0 0 10px #006cd9; border-radius: 15px; position: absolute; top: 140px; left: 2px;}
+.volt_btn{width:0; height:0;}
+.volt_btn>a{width: 70px; height: 40px; line-height: 40px; position: absolute; font-weight: bold; text-align: center;}
+.vot0{top: 235px; left: 15px;}
+.vot01{top: 45px; left: 15px;}
+.vot02{top: 80px; left: 240px;}
+.vot03{top: 240px; left: 215px;}
+.vot0:hover{color: #fff; text-shadow: 0 0 5px #006cd9;}
+.vot01:hover{color: #fff; text-shadow: 0 0 5px #006cd9;}
+.vot02:hover{color: #fff; text-shadow: 0 0 5px #006cd9;}
+.vot03:hover{color: #fff; text-shadow: 0 0 5px #006cd9;}
+.volume>a.von{color: #fff; text-shadow: 0 0 5px #006cd9;}
+
+.volt_box{width: 500px; height: 360px; margin-top: 50px; position: relative;}
+.volt_box>div{position: absolute; top:0; left:0; display:none; width: 100%; height: 100%;}
+.volt_box>div h1{font-size: 2.3em;}
+.volt_box>div h1>span{color: #1a8dff; font-size: 1.5em;}
+.volt_box>div h2{font-size: 1.2em; font-weight: bold; margin-top: 10px;}
+.volt_box>div p{font-size: 1em; font-weight: bold; margin-top: 30px;}
+.volt02>table{width: 100%; height: 200px; text-align: center; margin-top: 50px;}
+.volt02 th{font-size: 1.5em; background: rgba(255,255,255,0.8);}
+.volt02 th:first-child{border-right: 1px dashed #888888; }
+.volt02 td:first-child{border-right: 1px dashed #ffffff; }
+.volt02 tr{border-bottom: 1px dashed #ffffff;}
+.volt02 tr:last-child{border-bottom: none;}
+.volt02 td{font-size: 0.9em; font-weight: bold; background: rgba(0,0,0,0.5); color: #ffffff;}
+.volt_box>div.view{display: block;}
+.volt_box>.volt04 h1{font-size: 2.2em;}
+.volt04 table{width: 100%; height: 300px; background: rgba(0,0,0,0.6); text-align: center; margin-top: 20px; color: #ffffff; font-size: 0.9em; box-sizing:border-box;}
+.volt04 table tr{border-bottom: 1px dashed #999999;}
+.volt04 table td{border-right: 1px dashed #999999;}
+.volt04 table td:last-child{border-right: none;}

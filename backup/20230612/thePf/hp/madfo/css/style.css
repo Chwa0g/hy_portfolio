@@ -1,0 +1,1155 @@
+﻿#wrapper{
+	width: 100%;
+}
+
+.cf:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.fl{
+	float:left;
+}
+#scroll{
+	position: fixed;
+	top: 50px;
+	right: 100px;
+	font-size: 3em;
+	font-weight: bold;
+	display:none;
+}
+/* -------------------------------- * header start * -------------------------------- */
+
+/* 헤더크기 */
+#header{
+	width: 100%;
+	height: 900px;
+}
+/* 헤더들어있는박스 */
+#header_box{
+	position: relative;
+	top: 25%;
+	width: 1504px;
+	height: 450px;
+	margin: 0 auto;
+}
+
+/* 로고들어간박스 */
+.header_logo{
+	width: 304px;
+	height: 450px;
+	float: left;
+}
+/* 로고링크 */
+.header_logo a{
+	width: 165px;
+	height: 22px;
+	position: relative;
+	top: 200px;
+	left: 69.5px;
+	background: url(../images/logoB.png) no-repeat;
+}
+
+
+/* 유틸들어간 박스 */
+.header_util{
+	width: 260px;
+	height: 25px;
+	position: absolute;
+	top: 235px;
+	left: 33.5px;
+}
+/* 유틸 li 플롯 */
+.header_util ul li{
+	float: left;
+}
+/* 유틸사이 선배경 */
+.header_util ul li a{
+	font-size: 11px;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 10px;
+	background: url(../images/util_bar.gif) right 6px no-repeat;
+}
+/* 유틸 호버색 */
+.header_util ul li a:hover{
+	color: #999999;
+}
+/* 유틸 맨끝 선 없애기 */
+.header_util ul li .nb{
+	background: none;
+}
+
+
+/* 메뉴박스 */
+.header_gnb{
+	width:1150px;
+	height: 450px;
+	float: left;
+	padding-left: 50px;
+}
+
+/* 원뎁 li */
+.header_gnb>ul>li{
+	width: 150px;
+	height: 90px;
+	border-right: 2px solid #555555;
+	overflow: hidden;
+	transition-duration: 1.2s;
+}
+/* 원뎁 li 호버시 길이 */
+.header_gnb>ul>li:hover{
+	width: 450px;
+	border-right: 5px double #999999;
+}
+/* 원뎁 li 중 메뉴 호버 시 길이 */
+.header_gnb>ul>.menu_li_width:hover{
+	width: 1198px;
+	transition-duration: 2s;
+}
+/* 원뎁 글자속성 */
+.header_gnb>ul>li>a{
+	width: 150px;
+	height: 90px;
+	line-height: 90px;
+	float: left;
+	font-size: 1.1em;
+	color: #555555;
+	padding-right: 20px;
+	transition-duration: 0.5s;
+}
+/* 원뎁 호버시 커지고 색변화 */
+.header_gnb>ul>li:hover>a{
+	font-size: 1.2em;
+	color: #222222;
+}
+
+/* 투뎁스 ul */
+.header_gnb>ul>li>ul{
+	width: 0px;
+	height: 90px;
+}
+/* 원뎁스 li 호버시 투뎁스 ul 길이 */
+.header_gnb>ul>li:hover ul{
+	width: 1198px;
+}
+/* 투뎁스 ul 밑 li 플롯 */
+.header_gnb>ul>li>ul>li{
+	width:110px;
+	height: 90px;
+	float: left;
+}
+/* 투뎁스 글자 */
+.header_gnb>ul>li>ul>li>a{
+	width: 110px;
+	height: 90px;
+	font-size: 15px;
+	color: #999999;
+	text-align: center;
+	line-height: 90px;
+	position: relative;
+	transition-duration: 0.5s;
+}
+/* 투뎁스 글자 호버시 언더라인 및 색변화 */
+.header_gnb>ul>li>ul>li>a:hover{
+	text-decoration: underline;
+	color: #333333;
+}
+/* 투뎁스 중 메뉴 안에 글자 */
+.header_gnb>ul>li>.menu_ul>li>a{
+	line-height: 130px;
+	font-size: 13px;
+}
+/* 투뎁스 중 메뉴 안에 이미지 */
+.header_gnb>ul>li>.menu_ul>li>a>span{
+	position: absolute;
+	top:15px;
+	left: 42px;
+	width: 26px;
+	height: 30px;
+	display: block;
+	background: url(../images/icon_26-200.png) no-repeat;
+	margin: 0 auto;
+}
+/* 투뎁스 중 글자 2줄인거 라인헤이트 조정 */
+.header_gnb>ul>li>ul>li>.menu_2lh{
+	line-height: 20px;
+	display: table-cell;
+	vertical-align: middle;
+}
+/* 투뎁스 중 메뉴안에 배경 위치 잡아줌 */
+.header_gnb>ul>li>.menu_ul>li>a>.menu_bg02{background-position: -200px 1px;}
+.header_gnb>ul>li>.menu_ul>li>a>.menu_bg03{background-position: -400px 1px;}
+.header_gnb>ul>li>.menu_ul>li>a>.menu_bg04{background-position: -600px 1px;}
+.header_gnb>ul>li>.menu_ul>li>a>.menu_bg05{background-position: -800px 1px;}
+.header_gnb>ul>li>.menu_ul>li>a>.menu_bg06{background-position: 0px -197px;}
+.header_gnb>ul>li>.menu_ul>li>a>.menu_bg07{background-position: -200px -197px;}
+.header_gnb>ul>li>.menu_ul>li>a>.menu_bg08{background-position: -400px -197px;}
+.header_gnb>ul>li>.menu_ul>li>a>.menu_bg09{background-position: -600px -197px;}
+
+/* -------------------------------- * header finish * -------------------------------- */
+
+
+
+
+/* -------------------------------- * wrap start * -------------------------------- */
+
+/* 랩 큰박스 */
+#wrap{
+	width: 100%;
+	position: relative;
+}
+/* 버튼호버 공통속성 */
+.btn_more:hover{
+	background: #333333;
+	color: #ffffff;
+}
+/* -------------------------------- * hover menu start * -------------------------------- */
+/* 랩 호버시 생기는 메뉴박스 */
+#hover_menu{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	height: 70px;
+	opacity: 0;
+	transition-duration: 0.5s;
+	z-index: 10;
+}
+/* 버튼 공통속성 */
+.btn_more{
+	position: relative;
+	width: 110px;
+	height: 35px;
+	color: #333333;
+	background: #ffffff;
+	font-size: 12px;
+	text-align: center;
+	line-height: 35px;
+	letter-spacing: -1px;
+	transition-duration: 0.5s;
+	margin: 0 auto;
+}
+/* 메뉴 감싸고 가운데로 보내주는 박스 */
+.menu_center_box{
+	width: 1504px;
+	height: 70px;
+	margin: 0 auto;
+	background: #ffffff;
+}
+/* 로고박스 */
+.logo_box{
+	width: 200px;
+	height: 70px;
+	float: left;
+}
+/* 로고태그 및 로고이미지 */
+.logo_box a{
+	width: 200px;
+	height: 70px;
+	background: url(../images/logoB.png) center center no-repeat;
+}
+/* 메뉴박스 */
+.menu_box{
+	width: 1000px;
+	height: 70px;
+	float: left;
+}
+/* 메뉴박스 ul */
+.menu_box ul{
+	width:700px;
+	height: 70px;
+	padding: 0 150px;
+}
+/* 메뉴박스 li */
+.menu_box ul li{
+	width: 140px;
+	height: 70px;
+	float: left;
+}
+/* 메뉴박스 원뎁 글씨 */
+.menu_box ul li a{
+	width: 140px;
+	height: 70px;
+	text-align: center;
+	line-height: 70px;
+	font-size: 0.9em;
+	color: #777777;
+	transition-duration: 0.5s;
+	font-weight: bold;
+}
+/* 메뉴박스 원뎁 호버 */
+.menu_box ul li:hover a{
+	color: #333333;
+}
+/* 유틸박스 */
+.util_box{
+	width: 304px;
+	height: 70px;
+	float: left;
+}
+/* 유틸 ul */
+.util_box ul{
+	width:300px;
+	height: 70px;
+	padding: 0 2px;
+}
+/* 유틸 li */
+.util_box ul li{
+	float: left;
+	width: 75px;
+	height: 70px;
+}
+/* 유틸사이 선배경 */
+.util_box ul li a{
+	font-size: 11px;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	background: url(../images/util_bar.gif) right center no-repeat;
+}
+/* 유틸 호버색 */
+.util_box ul li a:hover{
+	color: #999999;
+}
+/* 유틸 맨끝 선 없애기 */
+.util_box ul li .nb{
+	background: none;
+}
+/* -------------------------------- * hover menu finish * -------------------------------- */
+
+/* -------------------------------- * fas start * -------------------------------- */
+/* 화살표 속성 */
+#wrap .fas{
+	position: absolute;
+	float: left;
+	left: 50%;
+	font-size: 60px;
+	margin-left: -30px;
+	animation-name:ani;
+	animation-duration: 1s;
+	animation-iteration-count:infinite;
+	animation-direction: alternate;
+}
+/* 화살표 애니매이션 */
+@keyframes ani{
+	0%{top: -250px; color: #555555;}
+	100%{top: -230px; color: #999999;}
+	from{top: -250px;}
+	to{top: -230px;}
+}
+/* -------------------------------- * fas finish * -------------------------------- */
+
+/* -------------------------------- * main bg start * -------------------------------- */
+/* 메인 배경박스 */
+#main_bg_box{
+	width: 100%;
+	position: relative;
+	opacity:0;
+	transition-duration: 0.5s;
+	z-index:2;
+}
+/* 메인 배경 상자 */
+#main_bg{
+	width: 1504px;
+	margin: 0 auto;
+	margin-top: 200px;
+	position: relative;
+}
+#main_bg a{
+	position: absolute;
+	top:0;
+	left:0;
+}
+#main_bg a.main_bg_Img{
+	display: none;
+}
+/* -------------------------------- * main bg finish * -------------------------------- */
+
+/* -------------------------------- * main content start * -------------------------------- */
+/* 메인 컨텐츠 박스 */
+#main_content_box{
+	width: 100%;
+	position: relative;
+	padding-top: 820px;
+}
+/* 메인컨텐츠 */ 
+#main_content{
+	width: 1504px;
+	margin: 0 auto;
+}
+/* 메인컨텐츠 안에 박스 */
+.main_content_box{
+	width: 1504px;
+}
+/* 메인컨텐츠 안에 갈릭박스 */
+.mfg_info{
+	position: relative;
+	width: 1504px;
+	height: 575px;
+	overflow: hidden;
+	z-index:2;
+}
+/* 메인컨텐츠 갈릭박스 안에 이미지 호버시 커지는거 */
+.mfg_info:hover>img{
+	transform: scale(1.2,1.2);
+	transition-duration: 1s;
+}
+/* 메인컨텐츠 갈릭박스 안에 배경색 들어오는거 */
+.mfg_info .bg_op_bl{
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0);
+	transition-duration: 1s;
+}
+/* 메인컨텐츠 갈릭박스 안에 배경색 들어오는거 호버*/
+.mfg_info .bg_op_bl:hover{
+	background: rgba(0,0,0,0.6);
+}
+/* 갈릭박스 안에 마늘모양 */
+.mfg_garlic{
+	position: relative;
+	display: block;
+	background: url(../images/m-icon_garlic.png) no-repeat;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	top: 200px;
+	opacity: 0;
+	transition-duration: 1s;
+}
+/* 갈릭박스 안에 로고 */
+.mfg_logo{
+	position: relative;
+	display:block;
+	background:url(../images/logoB_B.png) no-repeat;
+	width: 165px;
+	height: 22px;
+	margin: 0 auto;
+	margin-top: 20px;
+	top: 200px;
+	transition-duration: 1s;
+	transition-delay: 0.2s;
+}
+/* 갈릭박스 안에 글 */
+.mfg_txt{
+	position: relative;
+	display:block;
+	width: 500px;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 20px;
+	top: 200px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 30px;
+	opacity: 0;
+	transition-duration: 1s;
+	transition-delay: 0.4s;
+}
+/* 갈릭박스 호버시 위치 변경 및 오퍼값 1 */
+.bg_op_bl:hover .mfg_garlic{top: 150px; opacity:1;}
+.bg_op_bl:hover .mfg_logo{top: 150px;}
+.bg_op_bl:hover .mfg_txt{top: 150px; opacity:1;}
+
+/* 갈릭박스 아래로 나오는거 첫번쨰박스 */
+.mfg_info_down01{
+	position: relative;
+	width: 376px;
+	height: 0px;
+	overflow: hidden;
+	transition-duration: 1s;
+	transition-property: height;
+	transition-delay: 1s;
+}
+/* 갈릭박스 아래로 나오는거 두번쨰박스 */
+.mfg_info_down02{
+	position: relative;
+	width: 752px;
+	height: 0px;
+	overflow: hidden;
+	transition-duration: 1s;
+	transition-property: height;
+	transition-delay: 1s;
+}
+/* 갈릭박스 아래로 나오는거 세번쨰박스 */
+.mfg_info_down03{
+	position: relative;
+	width: 376px;
+	height: 0px;
+	overflow: hidden;
+	transition-duration: 1s;
+	transition-property: height;
+	transition-delay: 1s;
+}
+/* 내려오는 각 박스들 이미지 크기변화 호버 */
+.down_scale:hover>img{
+	transform: scale(1.2,1.2);
+	transition-duration: 1s;
+}
+/* 내려오는 각 박스들 배경변화 */
+.down_scale .bg_op_bl{
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0);
+	transition-duration: 1s;
+}
+/* 내려오는 각 박스들 배경변화 호버 */
+.down_scale .bg_op_bl:hover{
+	background: rgba(0,0,0,0.6);
+}
+/* 내려오는 각 박스들 안에 스판설정 */
+.down_scale .bg_op_bl span{
+	position:relative;
+	display: block;
+	color: #ffffff;
+	font-size: 17px;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	top: 120px;
+	transition-duration: 0.5s;
+	transition-delay: 0.2s;
+	opacity: 0;
+}
+/* 내려오는 각 박스들 안에 텍스트 설정설정 */
+.down_scale .bg_op_bl .down_txt{
+	top: 120px;
+	width: 100%;
+	text-align: center;
+	opacity: 1;
+	transition-delay: 0.4s;
+}
+/* 내려오는 각 박스들 안에 버튼 설정 */
+.down_scale .btn_more{
+	top: 120px;
+	transition-delay: 0.6s;
+	opacity: 0;
+}
+
+/* 내려오는 각 박스들 안에 아이콘 */
+.mfg_down_img01{background: url(../images/m-icon_membership.png) no-repeat;}
+.mfg_down_img02{background: url(../images/m-icon_garlic.png) no-repeat;}
+.mfg_down_img03{background: url(../images/m-icon_history.png) no-repeat;}
+/* 내려오는 각 박스들 호버 시 안에 아이콘 보이고 위치변경 */
+.mfg_info_down01:hover .mfg_down_img01{top:80px; opacity:1;}
+.mfg_info_down02:hover .mfg_down_img02{top:80px; opacity:1;}
+.mfg_info_down03:hover .mfg_down_img03{top:80px; opacity:1;}
+/* 내려오는 각 박스들 호버 시 안에 텍스트 위치변경 */
+.mfg_info_down01:hover .mfg_down_txt01{top:85px;}
+.mfg_info_down02:hover .mfg_down_txt02{top:85px;}
+.mfg_info_down03:hover .mfg_down_txt03{top:85px;}
+/* 내려오는 각 박스들 호버 시 안에 버튼 보이고 위치변경 */
+.mfg_info_down01:hover .btn_more{top:80px; opacity:1;}
+.mfg_info_down02:hover .btn_more{top:80px; opacity:1;}
+.mfg_info_down03:hover .btn_more{top:80px; opacity:1;}
+
+/* 호버 시 높이값줘서 내려오는 각 박스들 */
+.main_content_box:hover .mfg_info_down01{height: 355px;}
+.main_content_box:hover .mfg_info_down02{height: 355px;}
+.main_content_box:hover .mfg_info_down03{height: 355px;}
+
+/* -------------------------------- * main content finish * -------------------------------- */
+
+
+/* -------------------------------- * main content sub start * -------------------------------- */
+/* 컨텐츠 서브 박스 */
+.main_content_sub{
+	width: 100%;
+	height: 827px;
+	margin-top: 3px;
+}
+/* 컨텐츠 서브박스 밑에 박스들 */
+.main_content_sub>div{
+	position: relative;
+	overflow: hidden;
+}
+/* 각 박스 크기 */
+.content_sub_box01{width: 506px; height:492px;}
+.content_sub_box02{width: 492px; height:492px; background: #dfdfdf;}
+.content_sub_box03{width: 506px; height:492px;}
+.content_sub_box04{width: 506px; height:335px;}
+.content_sub_box05{width: 492px; height:335px;}
+.content_sub_box06{width: 506px; height:335px;}
+/* 각 박스 이미지 호버시 커지는거 */
+.main_content_sub>div:hover>img{
+	transform: scale(1.2,1.2);
+	transition-duration: 1s;
+}
+/* 각 박스 배경 */
+.main_content_sub>div .bg_op_bl{
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0);
+	transition-duration: 1s;
+}
+/* 각 박스 호버시 배경색 */
+.main_content_sub>div .bg_op_bl:hover{
+	background: rgba(0,0,0,0.6);
+}
+/* 각 박스 아래 스판 */
+.main_content_sub>div .bg_op_bl span{
+	position:relative;
+	display: block;
+	color: #ffffff;
+	font-size: 17px;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	top: 110px;
+	text-align: center;
+	transition-duration: 0.5s;
+	transition-delay: 0.2s;
+}
+/* 박스 윗줄 텍스트 */
+.main_content_sub>div .bg_op_bl .Csub_txt01{
+	height: 20px;
+	top: 190px;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	opacity: 1;
+	transition-delay: 0.4s;
+}
+/* 박스 아랫줄 텍스트 */
+.main_content_sub>div .bg_op_bl .Csub_txt02{
+	height: 20px;
+	top: 110px;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	opacity: 1;
+	transition-delay: 0.4s;
+}
+/* 모든 버튼 속성 */
+.main_content_sub>div .btn_more{
+	top: 120px;
+	transition-delay: 0.6s;
+	opacity: 0;
+}
+/* 위에줄 버튼 위치조정 */
+.main_content_sub>div .Csub_btn{
+	top: 190px;
+}
+/* 위에줄 아래줄 아이콘 위치조정 밑 오퍼값 */
+.main_content_sub>div .bg_op_bl .Csub_img_a{top: 190px; opacity:0;}
+.main_content_sub>div .bg_op_bl .Csub_img_b{opacity:0;}
+/* 각 박스 아이콘 */
+.main_content_sub>div .Csub_img01{background: url(../images/m-icon_brand.png) no-repeat;}
+.main_content_sub>div .Csub_img02{background: url(../images/m-icon_starter.png) no-repeat;}
+.main_content_sub>div .Csub_img03{background: url(../images/m-icon_pasta.png) no-repeat;}
+.main_content_sub>div .Csub_img04{background: url(../images/m-icon_pizza.png) no-repeat;}
+.main_content_sub>div .Csub_img05{background: url(../images/m-icon_ricerisotto.png) no-repeat;}
+.main_content_sub>div .Csub_img06{background: url(../images/m-icon_steak.png) no-repeat;}
+/* 위에줄 아래줄 호버시 아이콘 */
+.main_content_sub>div:hover .Csub_img_a{top: 160px; opacity: 1;}
+.main_content_sub>div:hover .Csub_img_b{top: 80px; opacity: 1;}
+/* 위에줄 아래줄 호버시 텍스트 위치변경 */
+.main_content_sub>div:hover .Csub_txt01{top:160px;}
+.main_content_sub>div:hover .Csub_txt02{top:85px;}
+/* 위에줄 아래줄 호버시 버튼 위치조정 */
+.main_content_sub>div:hover .btn_more{top:95px; opacity: 1;}
+.main_content_sub>div:hover .Csub_btn{top:170px;}
+
+/* 2번박스 적용 효과 조정 */
+.content_sub_box02 .bg_op_bl{transition-delay: 1s;}
+.content_sub_box02 .bg_op_bl>.Csub_img02{transition-delay: 1s;}
+.content_sub_box02 .bg_op_bl>.Csub_txt01{transition-delay: 1.4s;}
+.content_sub_box02 .bg_op_bl>.btn_more{transition-delay: 1.2s;}
+
+/* 2번박스 이미지1번 */
+.content_sub_box02_a{
+	width: 246px;
+	height: 246px;
+	background: url(../images/sub_bg02_1.png) no-repeat;
+	position: absolute;
+	top:0;
+	left: 246px;
+}
+/* 2번박스 이미지2번 */
+.content_sub_box02_b{
+	width: 246px;
+	height: 246px;
+	background: url(../images/sub_bg02_2.png) no-repeat;
+	position: absolute;
+	top:246px;
+	left: 246px;
+}
+/* 2번박스 이미지3번 */
+.content_sub_box02_c{
+	width: 246px;
+	height: 492px;
+	background: url(../images/sub_bg02_3.png) no-repeat;
+	position: absolute;
+	top:0;
+	left: 246px;
+	transition-duration: 1s;
+}
+/* 2번박스 이미지3번 호버시 왼쪽으로 이동 */
+.content_sub_box02:hover .content_sub_box02_c{left:0;}
+.content_sub_box02_c>img{display:none;}
+/* 2번박스 반응형 이미지 안보이게 */
+
+/* -------------------------------- * main content sub finish * -------------------------------- */
+
+
+/* -------------------------------- * main content bottom start * -------------------------------- */
+
+/* 메인 컨텐츠 아래쪽 양쪽으로 열리는 박스 */
+.main_content_bottom{
+	width: 100%;
+	height: 825px;
+	position: relative;
+	margin-top: 3px;
+	overflow: hidden;
+}
+/* 메인 컨텐츠 아래쪽 양쪽으로 열리는 박스 안에 div들*/
+.main_content_bottom>div{
+	width: 752px;
+	transition-duration: 2s;
+	position: relative;
+}
+/* 메인 컨텐츠 아래쪽 양쪽으로 열리는 박스 안에 두번째 div */
+.main_ct_bot_02{top: 0px; left:752px; transition-delay:0.5s;}
+/* 메인 컨텐츠 아래쪽 양쪽으로 열리는 박스 아래 박스 */
+.main_content_bottom>div>div{
+	height: 825px;
+	position: absolute;
+	transition-duration: 2s;
+	overflow:hidden;
+}
+/* 메인 컨텐츠 아래쪽 양쪽으로 열리는 박스 아래박스 각각 속성 */
+.content_bottom_box01{left: 0; width: 752px;}
+.content_bottom_box02{left: 752px; width: 0px; z-index:2; transition-delay:0.5s;}
+.content_bottom_box03{left: 0px; width: 752px; transition-delay:0.5s;}
+.content_bottom_box04{background: rgba(0,0,0,0.7); left: 0px; width: 0px; transition-delay:0.5s;}
+/* 메인 컨텐츠 아래쪽 양쪽으로 열리는 박스 2번 호버시 위치값 */
+.main_ct_bot_02:hover{left: 52px;}
+/* 메인 컨텐츠 아래쪽 양쪽으로 열리는 박스 아래박스 호버시 위치값 및 위드값 */
+.main_ct_bot_01:hover .content_bottom_box02{width: 700px;}
+.main_ct_bot_02:hover .content_bottom_box03{left: 700px;}
+.main_ct_bot_02:hover .content_bottom_box04{width: 700px;}
+
+/* 각 박스 이미지 호버시 커짐 */
+.main_content_bottom>div:hover>div>img{
+	transform: scale(1.2,1.2);
+	transition-duration: 1s;
+}
+/* 각 박스 배경 */
+.main_content_bottom>div>div .bg_op_bl{
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0);
+	transition-duration: 1s;
+}
+/* 각 박스 호버시 배경색 */
+.main_content_bottom>div:hover>div .bg_op_bl{
+	background: rgba(0,0,0,0.6);
+}
+/* 각 박스 아래 스판 */
+.main_content_bottom>div>div .bg_op_bl span{
+	position:relative;
+	display: block;
+	color: #ffffff;
+	font-size: 17px;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	top: 360px;
+	text-align: center;
+	transition-duration: 0.5s;
+	transition-delay: 0.2s;
+	opacity:0;
+}
+/* 각 박스 안에 아이콘 */
+.main_content_bottom>div>div .bg_op_bl .ct_btm_img01{background: url(../images/m-icon_dessert.png) no-repeat;}
+.main_content_bottom>div>div .bg_op_bl .ct_btm_img02{background: url(../images/m-icon_store.png) no-repeat;}
+/* 각 박스 텍스트 */
+.main_content_bottom>div>div .bg_op_bl .ct_btm_txt{
+	height: 20px;
+	top: 370px;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	opacity: 1;
+	transition-delay: 0.4s;
+}
+/* 모든 버튼 속성 */
+.main_content_bottom>div>div .bg_op_bl .btn_more{
+	top: 390px;
+	transition-delay: 0.6s;
+	opacity:0;
+}
+/* 박스 안에 속성들 위치값 및 오퍼값 */
+.main_content_bottom>div:hover>div .bg_op_bl .ct_btm_img{top: 330px; opacity:1;}
+.main_content_bottom>div:hover>div .bg_op_bl .ct_btm_txt{top: 340px;}
+.main_content_bottom>div:hover>div .bg_op_bl .btn_more{top: 360px; opacity:1;}
+
+/* 2번박스 안에 각 박스아래 DIV 앱솔 */
+.content_bottom_box02>div{position: absolute;}
+/* 2번박스 안에 각 박스 크기 및 위치 */
+.content_bottom_box02 .ct_btm_box02_bg01{width: 230px; height: 492px;}
+.content_bottom_box02 .ct_btm_box02_bg01>div{width: 230px; height: 246px; float:left;}
+.content_bottom_box02 .ct_btm_box02_bg02{width: 470px; height: 492px; left: 230px;}
+.content_bottom_box02 .ct_btm_box02_bg03{width: 230px; height: 333px; top: 492px;}
+.content_bottom_box02 .ct_btm_box02_bg04{width: 470px; height: 333px; left: 230px; top: 492px;}
+
+/* 각 박스 이미지 호버시 커짐 */
+.content_bottom_box02>div:hover>div>img{
+	transform: scale(1.2,1.2);
+	transition-duration: 1s;
+}
+/* 1번 박스 안에 이미지 커지는거 막음 */
+.content_bottom_box02>.ct_btm_box02_bg01:hover>div>img{transform: scale(1,1);}
+/* 각 박스 배경 */
+.main_content_bottom .main_ct_bot_01 .content_bottom_box02>div>.bg_op_bl{
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0);
+	transition-duration: 1s;
+}
+/* 각 박스 호버시 배경색 */
+.main_content_bottom .main_ct_bot_01 .content_bottom_box02>div:hover>.bg_op_bl{
+	background: rgba(0,0,0,0.6);
+}
+/* 각 박스 아래 스판 */
+.main_content_bottom .main_ct_bot_01 .content_bottom_box02>div>.bg_op_bl span{
+	position:relative;
+	display: block;
+	color: #ffffff;
+	font-size: 17px;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	top: 100px;
+	text-align: center;
+	transition-duration: 0.5s;
+	transition-delay: 0.2s;
+}
+/* 각 박스 텍스트 */
+.main_content_bottom .main_ct_bot_01 .content_bottom_box02>div .bg_op_bl .ct_btm_box02_txt{
+	height: 20px;
+	top: 100px;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	opacity: 1;
+	transition-delay: 0.4s;
+}
+/* 모든 버튼 속성 */
+.main_content_bottom .main_ct_bot_01 .content_bottom_box02>div .bg_op_bl .btn_more{
+	top: 110px;
+	transition-delay: 0.6s;
+	opacity:0;
+}
+/* 각 박스 안에 아이콘 */
+.ct_btm_box02_bg02 .bg_op_bl .ct_btm_box02_img01{background:url(../images/m-icon_beverage.png) no-repeat;}
+.ct_btm_box02_bg03 .bg_op_bl .ct_btm_box02_img02{background:url(../images/m-icon_dessert.png) no-repeat;}
+.ct_btm_box02_bg04 .bg_op_bl .ct_btm_box02_img03{background:url(../images/m-icon_wine.png) no-repeat;}
+/* 박스 안에 속성들 위치값 및 오퍼값 */
+.main_content_bottom .main_ct_bot_01 .content_bottom_box02>div:hover>.bg_op_bl .ct_btm_box02_img{top: 80px; opacity:1;}
+.main_content_bottom .main_ct_bot_01 .content_bottom_box02>div:hover>.bg_op_bl .ct_btm_box02_txt{top: 80px;}
+.main_content_bottom .main_ct_bot_01 .content_bottom_box02>div:hover>.bg_op_bl .btn_more{top: 90px; opacity:1;}
+
+/* 2번 드링크박스 위치값 조정 */
+.main_content_bottom .main_ct_bot_01 .content_bottom_box02>div .bg_op_bl .ct_btm_box02_img01{top: 190px;}
+.main_content_bottom .main_ct_bot_01 .content_bottom_box02>div .bg_op_bl .btmbox02_02_topA{top: 190px;}
+.main_content_bottom .main_ct_bot_01 .content_bottom_box02>div .bg_op_bl .btmbox02_02_topB{top: 200px;}
+.main_content_bottom .main_ct_bot_01 .content_bottom_box02>div:hover>.bg_op_bl .ct_btm_box02_img01{top: 170px;}
+.main_content_bottom .main_ct_bot_01 .content_bottom_box02>div:hover>.bg_op_bl .btmbox02_02_topA{top: 170px;}
+.main_content_bottom .main_ct_bot_01 .content_bottom_box02>div:hover>.bg_op_bl .btmbox02_02_topB{top: 180px;}
+
+/* 왼쪽으로 나오는 검은투명 박스 안에 박스 */
+.ct_btm_box04_box{
+	position: relative;
+	width: 700px;
+	height: 775px;
+	padding-top: 72.5px;
+}
+/* 테이블 위에 검색이랑 인풋 들어있는 박스 */
+.ct_btm_box04_box .btm_box04_srh{
+	width: 600px;
+	height: 30px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+/* 인풋 */
+.ct_btm_box04_box .btm_box04_srh input{
+	width: 193px;
+	height: 28px;
+	background: none;
+	border: 1px solid #efefef;
+	margin-left: 350px;
+	font-size: 13px;
+	line-height: 30px;
+	color: #ffffff;
+	padding-left: 6px;
+	float: left;
+	transition-duration: 0.3s;
+	border-right: none;
+}
+/* 인풋 호버 */
+.ct_btm_box04_box .btm_box04_srh input:hover{background: rgba(255,255,255,0.2);}
+/* 검색 상자 */
+.ct_btm_box04_box .btm_box04_srh a{
+	width: 48px;
+	height: 28px;
+	border: 1px solid #efefef;
+	text-align: center;
+	font-size: 13px;
+	line-height: 30px;
+	color: #ffffff;
+	float: left;
+	transition-duration: 0.3s;
+}
+/* 검색상자 호버 */
+.ct_btm_box04_box .btm_box04_srh a:hover{background: rgba(255,255,255,0.3)}
+
+/* 테이블 */
+.box04_table{
+	width: 600px;
+	height: 580px;
+	font-size: 13px;
+	color: #ffffff;
+	margin: 0 auto;
+}
+/* 테이블 th td 보더랑 높이 */
+.box04_table th, .box04_table td{
+	height: 59px;
+	border-bottom: 1px solid #efefef;
+	text-align: center;
+	border-left: 1px solid #efefef;
+}
+/* th위에 보더 및 높이 */
+.box04_table th{border-top: 2px solid #ffffbf; height: 37px;}
+/* 보더왼쪽 논 */
+.box04_table .bdln{border-left: none;}
+/* 각 세로줄 넓이 */
+.box04_table th:nth-child(1){width: 129px;}
+.box04_table th:nth-child(2){width: 349px;}
+.box04_table th:nth-child(3){width: 120px;}
+/* 매장에 호버시 언더라인 */
+.box04_table td:nth-child(1) a:hover{text-decoration: underline;}
+/* 중간 주소줄 왼쪽정렬 */
+.box04_table td:nth-child(2){text-align: left; padding-left: 15px;}
+/* 다음페이지 넘기는 숫자박스 */
+.ct_btm_box04_box .btm_box04_tbn{
+	width: 180px;
+	height: 50px;
+	margin: 0 auto;
+}
+/* 숫자박스 안에 숫자들 */
+.ct_btm_box04_box .btm_box04_tbn a{
+	color: #ffffff;
+	font-size: 15px;
+	float: left;
+	width: 30px;
+	text-align: center;
+	line-height: 50px;
+	height: 50px;
+	transition-duration: 0.3s;
+}
+/* 숫자박스 첫번째 색변화 및 크기 */
+.ct_btm_box04_box .btm_box04_tbn a:nth-child(1){
+	color: #ffffbf;
+	font-size: 17px;
+	font-weight: bold;
+}
+/* 숫자 호버시 색변화 및 언더라인 */
+.ct_btm_box04_box .btm_box04_tbn a:hover{color: #ffffbf; text-decoration: underline;}
+
+/* -------------------------------- * main content bottom finish* -------------------------------- */
+
+
+/* -------------------------------- *event box start * -------------------------------- */
+.event_box{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	position: relative;
+	width: 100%;
+}
+/* 이벤트 대제목 스판 감싸는 피태그 */
+.event_box>p{
+	width: 100%;
+	height: 50px;
+}
+/* 이벤트 대제목 글자 */
+.event_box>p>span{
+	font-size: 40px;
+	color: #555555;
+	text-align: center;
+	display: block;
+	width: 170px;
+	margin: 0 auto;
+	border-bottom: 1px solid #555555;
+	letter-spacing: -1px;
+}
+/* 이벤트 각 li */
+.event_box>ul>li{
+	position: relative;
+	width: 33.3%;
+	height: 285px;
+	margin-top: 50px;
+	float: left;
+}
+/* 이벤트 박스들 */
+.event_box>ul>li>div{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+/* 색박스 a */
+.event_box>ul>li>div>a{
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+	transition-duration: 1s;
+}
+/* 부제목 */
+.event_box>ul>li>div>a>p{
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	color: #ffffff;
+	padding-top: 35px;
+	letter-spacing: -1px;
+	position: relative;
+	top: 0;
+}
+/* 이벤트 상세 내용 */
+.event_box>ul>li>div>a>span{
+	text-align: center;
+	display: block;
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: normal;
+	width: 100%;
+	height: 175px;
+	margin-top: 30px;
+	line-height: 30px;
+	letter-spacing: -1px;
+	transition-duration: 1s;
+	padding-bottom: 20px; 
+}
+/* 이벤트 상세 내용 중 강조 */
+.event_box>ul>li>div>a>span>strong{
+	color: #ffffff;
+	font-weight: bold;
+	line-height: 40px;
+	transition-duration: 0.3s;
+}
+/* 호버시 강조 색변화 */
+.event_box>ul>li a:hover strong{color: #b3deff;}
+/* 위드값 33.4하나 */
+.width334{width: 33.4%;}
+/* 호버시 이미지 커짐 */
+.event_box>ul>li:hover img{transform: scale(1.2,1.2); transition-duration: 1s;}
+/* 호버시 배경 어두워짐 */
+.event_box>ul>li>div>a:hover{background: rgba(0,0,0,0.8);}
+
+
+/* -------------------------------- *event box finish * -------------------------------- */
+
+/* -------------------------------- * wrap finish * -------------------------------- */
+
+
+
+
+/* -------------------------------- * footer start * -------------------------------- */
+#footer{
+	width: 100%;
+	height: 250px;
+}
+.footer_box{
+	width: 1504px;
+	height: 250px;
+	margin: 0 auto;
+	border-top: 1px dashed #adadad;
+}
+.ft_box_top{
+	width: 100%;
+	height: 200px;
+	padding-top: 50px;
+}
+.ft_box_top div{
+	width: 165px;
+	height: 22px;
+	margin: 0 auto;
+	opacity: 0.6;
+	padding-bottom: 20px;
+}
+.ft_box_top p{
+	font-size: 15px;
+	text-align: center;
+	padding: 5px 0px;
+	color: #777777;
+}
+.ft_box_top p span{
+	font-size: 12px;
+}
+.ft_box_bottom{
+	width: 100%;
+	height: 50px;
+}
+.ft_bot_left{
+	width: 50%;
+	height: 50px;
+}
+.ft_bot_left a{
+	width: 35px;
+	height: 30px;
+	margin-left: 10px;
+	margin-top: 10px;
+	background: url(../images/btn_sns.png) no-repeat;
+}
+.ft_bot_left .bot_lt_01{background-position: 0px 0px;}
+.ft_bot_left .bot_lt_02{background-position: -35px 0px;}
+.ft_bot_left .bot_lt_03{background-position: -70px 0px;}
+.ft_bot_left .bot_lt_04{background-position: -105px 0px;}
+.ft_bot_left .bot_lt_01:hover{background-position: 0px -30px;}
+.ft_bot_left .bot_lt_02:hover{background-position: -35px -30px;}
+.ft_bot_left .bot_lt_03:hover{background-position: -70px -30px;}
+.ft_bot_left .bot_lt_04:hover{background-position: -105px -30px;}
+
+.ft_bot_right{
+	width: 50%;
+	height: 50px;
+	position: relative;
+}
+.ft_bot_right a{
+	position: absolute;
+	right:0;
+	width: 132px;
+	height: 35px;
+	margin-top: 7.5px;
+	background: url(../images/btn_app.png) no-repeat;
+}
+.ft_bot_right .bot_rt_01{right: 132px; background-position: 0px 0px;}
+.ft_bot_right .bot_rt_02{background-position: -132px 0px;}
+.ft_bot_right .bot_rt_01:hover{background-position: 0px -35px;}
+.ft_bot_right .bot_rt_02:hover{background-position: -132px -35px;}
+/* -------------------------------- * footer finish * -------------------------------- */
+
+
+
+
+
+
+
+
+
+
+

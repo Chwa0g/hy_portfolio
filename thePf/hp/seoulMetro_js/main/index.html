@@ -1,0 +1,542 @@
+﻿<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title>서울교통공사</title>
+	<link rel="shortcut icon" href="../favicon/favicon.ico">
+	<link rel="icon" type="image/gif" href="../favicon/favicon_s.gif">
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/tab.js"></script>
+	<script src="js/weather.js"></script>
+</head>
+<body>
+	<div id="n1">0</div>
+	<div id="wrap" class="cf">
+		<div id="header" class="cf">
+			<div id="header_in" class="cf">
+				<div id="seoul_gnb">
+					<div id="seoul_link">
+						<ul class="seoul_ul">
+							<li class="seoul_icon fl"><a href="http://www.seoul.go.kr/main/index.html" target="_blank"></a></li>
+							<li  class="seoul_notice fl"><a href="http://www.seoul.go.kr/v2012/news/list.html" target="_blank"></a></li>
+							<li  class="seoul_text fl"><a href="http://www.seoul.go.kr/v2012/news/list.html" target="_blank">시민누구나 참여가능한 문화비축프로그램 사전신청후 참여 가능합니다.</a></li>
+						</ul>
+					</div> <!-- id="seoul_link" -->
+					<div id="seoul_quick">
+						<ul class="q_icon">
+							<li class="qi fl"></li>
+							<li class="qi1 fl"><a href="http://www.seoul.go.kr/v2012/news/list.html" target="_blank"></a></li>
+							<li class="qi2 fl"><a href="http://eungdapso.seoul.go.kr/" target="_blank"></a></li>
+							<li class="qi3 fl"><a href="http://opengov.seoul.go.kr/" target="_blank"></a></li>
+							<li class="qi4 fl"><a href="#"></a></li>
+						</ul>
+					</div> <!-- id="seoul_quick" -->
+				</div> <!-- id="seoul_gnb" -->
+				<div id="menu_top">
+					<div id="menu">
+						<div id="menu_under">
+							<a href="index.html"><img src="images/logo.png" width="146" height="43"  alt="서울교통공사" /></a>
+							<div id="nav">
+								<div class="bg"><span></span></div>
+								<div class="bg_menu cf">
+									<ul class="cf">
+										<li class="menu01 fl linem"><a href="../sub/sub1_useInfo/payInfo/payInfo.html">이용정보</a>
+											<ul class="twoD">
+												<li><a href="#">사이버스테이션</a></li>
+												<li><a href="#">실시간열차운행정보</a></li>
+												<li><a href="../sub/sub1_useInfo/delay/delay.html">간편지연증명서</a></li>
+												<li><a href="../sub/sub1_useInfo/lostCenter/lostCenter.html">유실물센터</a></li>
+												<li><a href="../sub/sub1_useInfo/payInfo/payInfo.html">운임제도</a></li>
+												<li><a href="../sub/sub1_useInfo/confac/confac.html">이용고객 편의시설</a></li>
+											</ul>
+										</li>
+										<li class="menu02 fl linem"><a href="../sub/sub2_safe/safeCharter/safeCharter.html">안전환경</a>
+											<ul class="twoD">
+												<li><a href="../sub/sub2_safe/safeCharter/safeCharter.html">안전헌장</a></li>
+												<li><a href="#">안전경영방침</a></li>
+												<li><a href="#">안전관련법령</a></li>
+												<li><a href="../sub/sub2_safe/safeReport/safeReport.html">안전보고서</a></li>
+												<li><a href="#">안전가이드</a></li>
+												<li><a href="#">안전동영상</a></li>
+												<li><a href="#">안전웹툰</a></li>
+												<li><a href="#">안전장비 취급요령 현황</a></li>
+												<li><a href="#">지하철테러대응</a></li>
+												<li><a href="#">지하철역 환경</a></li>
+												<li><a href="#">산업현황</a></li>
+											</ul>
+										</li>
+										<li class="menu03 fl linem"><a href="../sub/sub3_people/themaTravel/themaTravel.html">시민 참여</a>
+											<ul class="twoD">
+												<li><a href="../sub/sub3_people/themaTravel/themaTravel.html">문화스테이션</a></li>
+												<li><a href="#">신청센터</a></li>
+												<li><a href="#">이벤트</a></li>
+												<li><a href="../sub/sub3_people/perResult/perResult.html">고객서비스 헌장</a></li>
+												<li><a href="#">시민 아이디어</a></li>
+												<li><a href="#">시민안전모니터</a></li>
+												<li><a href="#">설문조사</a></li>
+												<li><a href="#">고객의소리</a></li>
+											</ul>
+										</li>
+										<li class="menu04 fl linem"><a href="../sub/sub4_notice/notice/notice.html">알림마당</a>
+											<ul class="twoD">
+												<li><a href="../sub/sub4_notice/notice/notice.html">공지사항</a></li>
+												<li><a href="#">보도자료</a></li>
+												<li><a href="#">입찰/계약정보</a></li>
+												<li><a href="#">부대사업정보</a></li>
+												<li><a href="#">자료실</a></li>
+											</ul>
+										</li>
+										<li class="menu05 fl linem"><a href="../sub/sub5_openInfo/openInfo/openInfo.html">정보공개</a>
+											<ul class="twoD">
+												<li><a href="../sub/sub5_openInfo/openInfo/openInfo.html">제도안내</a></li>
+												<li><a href="#">정보목록</a></li>
+												<li><a href="#">사전정보공표</a></li>
+												<li><a href="#">정보공개청구</a></li>
+												<li><a href="#">공공데이터개방</a></li>
+												<li><a href="#">결재문서/회의록</a></li>
+												<li><a href="#">개인정보처리방침</a></li>
+												<li><a href="#">청탁금지법</a></li>
+												<li><a href="#">반부패/청렴</a></li>
+												<li><a href="#">부조리신고센터</a></li>
+											</ul>
+										</li>
+										<li class="menu05 fl"><a href="../sub/sub6_intro/ceoGreeting/ceoGreeting.html">공사 소개</a>
+											<ul class="twoD">
+												<li><a href="../sub/sub6_intro/ceoGreeting/ceoGreeting.html">서울교통공사</a></li>
+												<li><a href="#">공사 이미지</a></li>
+												<li><a href="#">경영정보</a></li>
+												<li><a href="#">관련법령 및 사규</a></li>
+												<li><a href="#">사회공헌</a></li>
+												<li><a href="#">채용정보</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div> <!-- bg_menu cf -->
+							</div> <!-- id="nav" -->
+						</div> <!-- id="menu_under" -->
+					</div> <!-- id="menu" -->
+					<div id="menu_quick">
+						<ul class="mq">
+							<li class="sitemapq fl"><a href="#"></a></li>
+							<li class="memberq fl"><a href="../sub/login/login.html"></a></li>
+							<li class="searchq fl">
+								<a href="#" class="searchq_anchor"></a>
+								<div class="searchq_tab">
+									<div class="searchq_tab_box">
+										<form action="#">
+											<input type="text">
+										</form>
+										<a href="#">검색</a>
+									</div>
+								</div>
+							</li>
+							<li class="globalq fl">
+								<a href="#" class="globalq_anchor"></a>
+								<ul class="globalq_tab">
+									<li><a href="#">ENGLISH</a></li>
+									<li><a href="#">中文</a></li>
+									<li><a href="#">日本語</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div> <!-- id="menu_quick cf" -->
+				</div> <!-- id="menu_top" -->
+			</div> <!-- id="header_in" class="cf" -->
+		</div> <!-- id="header" class="cf" -->
+		
+		<div id="bg01" class="super_container">
+		<div id="container01" class="container cf">
+			<div id="seoul_metro">
+				<span>언제나 여러분과 함께하는 서울교통공사입니다.</span>
+				<div class="input_search">
+					<div class="i_search1 fl">
+						<form action="#">
+							<input type="text" placeholder="출발역" />
+						</form>
+					</div>
+					<div class="i_search2 fl">
+						<img src="images/img_arr.png" width="20" height="14" alt="arr" />
+					</div>
+					<div class="i_search3 fl">
+						<form action="#">
+							<input type="text" placeholder="도착역" />
+						</form>
+					</div>
+					<div class="i_search4 fl">
+						<a href="#">
+							<span>길찾기</span>
+						</a>
+					</div>
+				</div>
+			</div> <!-- id="seoul_metro" -->
+			<div id="seoul_box1">
+				<div class="qbox b1 fl"><a href="../sub/sub1_useInfo/delay/delay.html" class="hc"></a></div>
+				<div class="qbox b2 fl"><a href="../sub/sub1_useInfo/elevator/elevator.html" class="hc"></a></div>
+				<div class="qbox b3 fl"><a href="http://www.seoulmetro.co.kr/kr/cyberStation.do?menuIdx=538&action=info" target="_blank" class="hc"></a></div>
+				<div class="qbox b4 fl"></div>
+				<div class="qbox b5 fl">
+					<div class="qbox_b5_bg">
+					</div>
+					<img src="images/main_tile_n06.png" width="368" height="184" class="qbox_scale" alt="메인타이틀"/>
+					<span class="qbox_b5_tema"><strong>테마여행</strong></span>
+					<a href="../sub/sub3_people/themaTravel/themaTravel.html"></a>
+				</div>
+				<div class="qbox b6 fl"><a href="../sub/sub1_useInfo/care/care.html" class="hc"></a></div>
+			</div> <!-- id="seoul_box1" -->
+			<div id="seoul_box2">
+				<div class="qbox b7 fl"><a href="https://smss.seoulmetro.co.kr/traininfo/traininfoUserView.do" target="_blank" class="hc"></a></div>
+				<div class="qbox b8 fl"></div>
+				<div class="qbox b9 fl"><a href="../sub/sub1_useInfo/lostCenter/lostCenter.html" class="hc"></a></div>
+				<div class="qbox b10 fl"><a href="../sub/sub3_people/perResult/perResult.html" class="hc"></a></div>
+				<div class="qbox b11 fl"><a href="../sub/sub2_safe/safeReport/safeReport.html" class="hc"></a></div>
+				<div class="qbox b12 fl"></div>
+				<div class="qbox b13 fl"><a href="../sub/sub1_useInfo/confac/confac.html" class="hc"></a></div>
+			</div> <!-- id="seoul_box2" -->
+			
+			<div id="weather_box">
+				<div class="weather">
+					<div class="afterDay fl">
+						<div class="today_text">
+							Today
+						</div>
+						<div class="weather_icon">
+							<img src="images/weather_icon/clear.png" width="80" height="80" alt="날씨맑음" />
+						</div>
+						<div class="dateweek">
+							<div class="datecontent">
+								10/18<br />
+							</div>
+							<div class="number">
+								<span class="high">25</span>&deg;
+								<span class="low">11</span>&deg;
+							</div>
+							<div class="datecontent02">
+								10/18<br />
+							</div>
+							<div class="number02">
+								<span class="high">25</span>&deg;
+								<span class="low">11</span>&deg;
+							</div>
+						</div>
+					</div>
+					<div class="today fl">
+						<div class="date">
+							화요일,&nbsp;10/17
+						</div>
+						<div class="temp">
+							<span class="c">28</span>&deg;
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- id="container" -->
+		</div>
+		
+		<div id="bg02" class="super_container">
+		<div id="container02" class="container cf">
+			<div class="seoul_culture">
+				<span>서울교통공사에는 즐거운 문화행사들이 가득합니다.</span>
+			</div>
+			<div class="column_left fl">
+				<div class="artist_box">
+					<a href="#"><img src="images/banner01_n2.jpg" width="261" height="227" alt="" /></a>
+				</div>
+				<div class="popupzone_box">
+					<div class="popup_top">
+						<h5>팝업존</h5>
+					</div>
+					<div class="popup_bottom">
+						<a href="#"><img src="images/banner1.jpg" width="261" height="198" alt="" /></a>
+						<a href="#" class="slideImg"><img src="images/banner2.jpg" width="261" height="198" alt="" /></a>
+						<a href="#" class="slideImg"><img src="images/banner3.png" width="261" height="198" alt="" /></a>
+						<a href="#" class="slideImg"><img src="images/banner4.png" width="261" height="198" alt="" /></a>
+					</div>
+				</div> <!-- class="popupzone_box" -->
+			</div> <!-- class="column_left fl" -->
+			<div class="column_center fl">
+				<div class="column_center_bg"></div>
+				<div class="center_inbox">
+					<h5>시민과 함께하는 서울교통공사 이야기</h5>
+					<p>서울교통공사는 시민과 함께 즐기기 위한 많은 문화/공연을 제공합니다.</p>
+					<div class="center_images">
+						<ul>
+							<li  class="fl"><a href="#"><img src="images/column_1.jpg" width="208" height="256" alt="칼럼1" /></a></li>
+							<li  class="fl"><a href="#"><img src="images/column_2.jpg" width="208" height="256" alt="칼럼2" /></a></li>
+							<li  class="fl"><a href="#"><img src="images/column_3.jpg" width="208" height="256" alt="칼럼3" /></a></li>
+							<li  class="fl"><a href="#"><img src="images/column_4.jpg" width="208" height="256" alt="칼럼4" /></a></li>
+							<li  class="fl"><a href="#"><img src="images/column_5.jpg" width="208" height="256" alt="칼럼5" /></a></li>
+							<li  class="fl"><a href="#"><img src="images/column_6.jpg" width="208" height="256" alt="칼럼6" /></a></li>
+						</ul>
+					</div>
+					<div class="center_nextpage">
+						<a href="#" class="left">
+							<img src="images/btn_left02.png" width="12" height="19" alt="이전" /> 
+						</a>
+						<span>
+							이전&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다음
+						</span>
+						<a href="#" class="right">
+							<img src="images/btn_right02.png" width="12" height="19" alt="다음" /> 
+						</a>
+					</div>
+				</div>
+			</div> <!-- class="column_center fl" -->
+			<div class="column_right fl">
+				<ul class="quick_list">
+					<li class="quick_list01 mabt">
+						<a href="" class="icon_bg01">
+						<div>
+							<h3>지하철 사진</h3>
+							2017 지하철사진<br />공모전 수상작 전시
+						</div>
+						</a>
+					</li>
+					<li class="quick_list02 mabt">
+						<a href="" class="icon_bg02">
+						<div>
+						<h3>지하철여행</h3>
+						볼거리와 먹거리가<br />있는 지하철여행
+						</div>
+						</a>
+					</li>
+					<li class="quick_list03 mabt">
+						<a href="" class="icon_bg03">
+						<div>
+						<h3>테마여행</h3>
+						기분 전환을 위한<br />지하철 테마여행
+						</div>
+						</a>
+					</li>
+					<li class="quick_list04">
+						<a href="" class="icon_bg04">
+						<div>
+						<h3>사이버역사관</h3>
+						한눈에 보는<br />서울지하철 역사
+						</div>
+						</a>
+					</li>
+				</ul>
+			</div> <!-- class="column_right fl" -->
+		</div> <!-- id="container" -->
+		</div>
+		
+		<div id="bg03"  class="super_container">
+		<div id="container03" class="container cf">
+			<div class="seoul_help">
+				<span>도움이 필요하시거나, 서울교통공사 정보가 궁금하신가요?</span>
+			</div>
+			<div class="helpbox cf">
+				<div class="help_go fl">
+					<div class="help_gobox">
+						<h5><img src="images/title01.png" width="33" height="15" alt="" /> 바로가기</h5>
+						<div class="help_gobox_01">
+							<a href="#" class="help_write">
+							<div class="help_font">
+							<h4>작성하기</h4>
+							고객님의 이야기를<br />
+							들려주세요.
+							</div>
+							</a>
+						</div>
+						<div class="help_gobox_02">
+							<a href="#" class="help_faq">
+							<div class="help_font">
+							<h4>FAQ</h4>
+							궁금한 사항이 있으시면<br />
+							클릭하세요.
+							</div>
+							</a>
+						</div>
+						<div class="help_gobox_03">
+							<a href="#" class="help_help">
+							<div class="help_font">
+							<h4>봉사활동</h4>
+							누구나 참여 할 수 있고,<br />
+							가치 있는 봉사활동
+							</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="help_facetwit fl">
+					<div class="tabSet">
+						<ul class="tabs">
+							<li>
+								<a href="#panel1-1" class="on">
+									<span class="fcbg"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#panel1-2">
+									<span class="twbg"></span>
+								</a>
+							</li>
+						</ul>
+						<div class="panels">
+							<div class="panel" id="panel1-1">
+								<div class="help_facebook fbox01">
+									<p>
+										<strong>서울교통공사</strong>
+										<span>@seoul_metro</span>
+										2018년 6월 20일 15시 23분
+									</p>
+									<a href="#">서울매트로와 헤서웨이의 대 프로젝트 여름나기 프로젝트 "한강과 함께 달리는 헤서웨이 서브웨이" 가 21일 부터 한강진, 뚝섬, 여의나루등의 역에서 진행됩니다. 많은 시민분들의 참여 부탁드립니다.</a>
+								</div>
+								<div class="help_facebook fbox02">
+									<p>
+										<strong>서울교통공사</strong>
+										<span>@seoul_metro</span>
+										2018년 6월 19일 11시 41분
+									</p>
+									<a href="#">페이스북과 함께하는 서울교통공사의 6월 이벤트가 시작됩니다.
+									서울매트로와 함께하는 시민 여러분의 사진을 게시하고 해시태그를 2개 이상 달아주시면 추첨을 통해 푸짐한 선물을 증정해 드립니다.</a>
+								</div>
+							</div>
+							<div class="panel panel2" id="panel1-2">
+								<div class="help_twitter tbox01">
+									<p>
+										<strong>서울교통공사</strong>
+										<span>@seoul_metro</span>
+										2018년 6월 20일 14시 05분
+									</p>
+									<a href="#">지하철 이용불편과 개선사업관련 의견을 수렴하기 위해  "시민 초청의 날" 행사를실시합니다.
+									2018년 6월 20일 09시 부터 접수가 가능하오니 시민여러분의 많은 참여 부탁드립니다. </a>
+								</div>
+								<div class="help_twitter tbox02">
+									<p>
+										<strong>서울교통공사</strong>
+										<span>@seoul_metro</span>
+										2018년 6월 18일 17시 30분
+									</p>
+									<a href="#">서울매트로 음악행사가 2018년 6월 19일 부터 시작됩니다.
+									여러 아티스트들의 "여름 보내기 프로젝트" 와 함께 여름의 더위를 모두 날리는 시간이 되시길 기원합니다.</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="help_oneclick fl">
+					<img src="images/character.png" width="122" height="145" alt="캐릭터" class="character" />
+					<div class="oneclick_image"></div>
+					<div class="oneclick_icon">
+						<ul class="oneclick_icon_ul">
+							<li class="oneclick_icon01 fl"><a href="#">안전보고서</a></li>
+							<li class="oneclick_icon02 fl"><a href="#">비리신고센터</a></li>
+							<li class="oneclick_icon03 fl"><a href="#">SQI 이행실적</a></li>
+							<li class="oneclick_icon04 fl"><a href="#" class="oneclick_lineh">복지보조금<br />부정신고센터</a></li>
+							<li class="oneclick_icon05 fl"><a href="#" class="oneclick_lineh">청렴도 및<br />시책평가 결과</a></li>
+							<li class="oneclick_icon06 fl"><a href="#" class="oneclick_lineh">부패공직자<br />현황</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="help_notice fl">
+					<div class="help_notice_box">
+						<div class="help_notice_box01 fl">
+							<div class="help_notice_box01_bg"></div>
+							<a href="#">공지사항</a>
+						</div>
+						<div class="help_notice_box02 fl">
+							<div class="help_notice_box_text fl">
+								<ul>
+									<li><a href="#">기간제 업무직(영양조리사)채용 공고(재공고-신정차량사업소)</a></li>
+									<li><a href="#">기간제 업무직(보건관리자) 공개채용 서류합격자 공고(천왕차량사업소)</a></li>
+									<li><a href="#">기간제업무직(보건관리자) 채용 공고(군자차량사업소)</a></li>
+									<li><a href="#">(주)서울메트로환경 일반경비지도사 공개채용 모집 안내</a></li>
+									<li><a href="#">기간제근로자(영양조리사) 채용관련 면접전형 합격자 공고 및 신체검사 안내</a></li>
+								</ul>
+							</div>
+							<div class="help_notice_box_date fl">
+								<ul>
+									<li>2018-06-14</li>
+									<li>2018-06-12</li>
+									<li>2018-06-11</li>
+									<li>2018-06-10</li>
+									<li>2018-06-07</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="help_ricon fl">
+					<div class="help_ricon_text">
+						서울교통공사 소식 둘러보기
+					</div>
+					<div class="help_ricon_icon">
+						<a href="#" class="help_ricon_webzine fl">
+						<span class="help_icon_image1">
+						<img src="images/icon_con17.png" width="110" height="55" alt="webzine" />
+						</span>
+						<span class="help_icon_name1">서울교통공사 웹진</span>
+						</a>
+						<a href="#" class="help_ricon_blog fl">
+						<span class="help_icon_image2">
+						<img src="images/icon_con18.png" width="77" height="59" alt="blog" />
+						</span>
+						<span class="help_icon_name2">네이버 블로그</span>
+						</a>
+						<a href="#" class="help_ricon_youtube fl">
+						<span class="help_icon_image3">
+						<img src="images/icon_con19.png" width="56" height="49" alt="youtube" />
+						</span>
+						<span class="help_icon_name3">유투브</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div> <!-- id="container" -->
+		</div>
+		
+		<div class="siberstation">
+			<a href="http://www.seoulmetro.co.kr/kr/cyberStation.do?menuIdx=538" target="_blank">
+			<span>사이버스테이션</span>
+			<div class="station_arr_img"></div>
+			</a>
+		</div>
+		<div class="nextpage">
+			<ul class="nextpage_ul cf">
+				<li class="np_li1"><a href="#" class="circle1 on">Info</a></li>
+				<li class="np_li2"><a href="#" class="circle2">Culture</a></li>
+				<li class="np_li3"><a href="#" class="circle3">Service</a></li>
+			</ul>
+		</div>
+		
+		
+		<div id="footer" class="cf">
+			<div id="foot" class="cf">
+				<div class="foot_text cf">
+					<ul class="foott cf">
+						<li class="foott1 fl"><a href="#" class="nonpad">여객운송약관</a></li>
+						<li class="foott2 fl"><a href="#">개인정보처리방침</a></li>
+						<li class="foott3 fl"><a href="#">사규 제·개정 및 폐기 예고</a></li>
+						<li class="foott4 fl"><a href="#">관련 법령 및 사규</a></li>
+						<li class="foott5 fl"><a href="#">업무추진비 내역</a></li>
+						<li class="foott6 fl"><a href="#">찾아오시는 길</a></li>
+					</ul>
+				</div>
+				<p class="copyright">04806 서울특별시 성동구 천호대로 346 | 대표전화 1577-1234 Copyright 2017. 서울교통공사 All right reserved.</p>
+				<div class="wa cf">
+					<a href="#"><img src="images/mark_wa.png" width="75" height="53" alt="wa" /></a>
+				</div>
+				<div class="family_box cf">
+					<div class="family_input fl"><a href="">유관기관 바로가기</a></div>
+					<div class="family_go fl"><a href="#">GO</a></div>
+				</div>
+			</div> <!-- id="foot" class="cf" -->
+			
+		</div> <!-- id="footer" class="cf" -->
+	</div> <!-- id="wrap" class="cf" -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+

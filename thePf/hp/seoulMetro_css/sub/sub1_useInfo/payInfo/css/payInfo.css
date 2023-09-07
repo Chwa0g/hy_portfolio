@@ -1,0 +1,804 @@
+﻿*{margin:0; padding:0; border:0;}
+body{font-family: 'notokr-regular' , dotum, sans-serif;
+}
+ul,li,ol,dl{list-style:none;}
+img{border:0; vertical-align:top;}
+a{text-decoration: none;}
+.cf:after{content:""; display:block; clear:both;}
+.fl{float:left;}
+/* .cf{*zoom:1;} */
+
+/* ----------------------------------------------------------------------------------- */
+
+/* 전체틀 */
+#wrap{
+	position: relative;
+}
+/* 메뉴헤더 */
+#header{
+	width: 100%;
+	height: 110px;
+	position: relative;
+	float: left;
+	top: 0;
+	left: 0;
+}
+/* 메뉴헤더인 */
+#header_in{
+	position: absolute;
+	width: 100%;
+	height: 110px;
+	margin: 0 auto;
+	background: #5474c0;
+	z-index: 98;
+}
+/* 서울 글로벌네비박스 */
+#seoul_gnb{
+	position: relative;
+	width: 1739px;
+	height: 31px;
+	margin: 0 auto;
+}
+#seoul_gnb a{
+	display: block;
+}
+/* 글로벌네비 박스 안 앞부분 박스 */
+#seoul_link{
+	position: absolute;
+	width: 794px;
+	height: 30px;
+	margin: 0.5px 0px 0.5px 365px;
+}
+/* 서울링크 박스 안 이미지 위치값 */
+#seoul_link>.seoul_ul>li{background: url(../../../../main/images/seoulgnb.png) no-repeat;}
+
+#seoul_link ul .seoul_icon{
+	background-position: 0px -20px;
+	width:78px;
+	height:20px;
+	margin: 3px 30px 0px 0px;
+}
+#seoul_link ul .seoul_icon>a{width:78px; height:20px;}
+
+#seoul_link ul .seoul_notice{
+	background-position: -17px -45px;
+	width:17px;
+	height:11px;
+	margin: 9px 5px 0px 0px;
+}
+#seoul_link ul .seoul_notice>a{width:17px; height:11px;}
+
+#seoul_link ul .seoul_text{
+	background: none;
+	font-size: 12px;
+}
+#seoul_link ul .seoul_text>a{
+	width:600px;
+	height:30px;
+	color: #ffffff;
+	line-height: 30px;
+}
+
+/* 글로벌네비 박스 안 뒷부분 박스 */
+#seoul_quick{
+	position: absolute;
+	width: 286px;
+	height: 30px;
+	margin: 0.5px 0px 0.5px 1103px;
+}
+/* 서울퀵 박스 안 이미지 위치값 */
+#seoul_quick>.q_icon>li{background: url(../../../../main/images/seoulgnb.png) no-repeat;}
+#seoul_quick ul>li{width:56px; height:30px; border-right: 1px solid #6582c6; box-shadow: 1px 0px 0.1px #4263af;}
+#seoul_quick ul>li>a{width:56px; height:30px;}
+/* 버튼 호버 문제 해결해야됨 */
+
+#seoul_quick ul .qi{background-position: -9999px -9999px;}
+#seoul_quick ul .qi1{background-position: -78px -30px;}
+#seoul_quick ul .qi2{background-position: -132px -30px;}
+#seoul_quick ul .qi3{background-position: -187px -30px;}
+#seoul_quick ul .qi4{background-position: -242px -30px; text-indent: 9999px; overflow: hidden;}
+
+/* 메뉴박스 */
+#menu_top{
+	width: 100%;
+	height: auto;
+	z-index:99;
+	position: absolute;
+	background: #ffffff;
+}
+/* 원뎁배경색 및 원뎁투텝 박스 */
+#menu{
+	width: 100%;
+	height: 79px;
+	position: relative;
+	z-index: 10;
+	background: #ffffff;
+	background: rgba(255,255,255,1);
+}
+/* 원뎁투뎁 감싸고 로고 넣은 박스 중앙정렬 */
+#menu_under{
+	width: 1739px;
+	height: 79px;
+	margin: 0 auto;
+}
+/* 원뎁투뎁감싸고 위치조정 박스 */
+#nav{
+	margin-left: 235px;
+}
+/* 로고 */
+#menu_under>a{
+	position: absolute;
+	margin-top: 19px;
+	margin-left: 9px;
+}
+/* 원뎁스 */
+#nav>.bg_menu>ul>li{
+	width: 213.3px;
+	text-align: center;
+}
+/* 원뎁스 사이선 */
+#nav>.bg_menu>ul>.linem{
+	background: url(../../../../main/images/gnb_line01.gif) 212.3px 35px no-repeat;
+}
+/* 원뎁스 글자 */
+#nav>.bg_menu>ul>li>a{
+	display: block;
+	font-size: 17px;
+	height: 79px;
+	line-height: 80px;
+	font-weight: 600;
+	color: #000000;
+	text-decoration: none;
+	font-family: "Nanum Gothic";
+	transition-duration: 0.2s;
+}
+/* 투뎁스 */
+#nav>.bg_menu>ul>li>ul{
+	padding: 10px 0px 0px 20px;
+	text-align: left;
+	width: auto;
+	height: 500px;
+}
+/* 투뎁스글자 */
+#nav>.bg_menu>ul>li>ul a{
+	display: block;
+	color: #444444;
+	height: auto;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 40px;
+	font-family: "Nanum Gothic";
+	transition-duration: 0.3s;
+}
+/* 원뎁투뎁 글씨 트랜지션 */
+#nav>.bg_menu{
+	position: relative;
+	z-index: 9;
+	overflow: hidden;
+	height: 79px;
+	transition-property: height;
+	transition-duration: 0.3s;
+}
+/* 투뎁 호버 배경색 */
+.bg{
+	position: absolute;
+	top: 79px;
+	left: 0;
+	width: 100%;
+	height: 0px;
+	background: #ffffff;
+	z-index: 1;
+	border-top: 1px solid #cccccc;
+	transition-property: height;
+	transition-duration: 0.3s;
+}
+/* 메뉴안에 퀵아이콘 */
+#menu_quick{
+	position:absolute;
+	left: 91%;
+	top: 14%;
+	width:101px;
+	height:61px;
+	z-index: 11;
+}
+#menu_quick .mq{
+	width:97px;
+	height:57px;
+	border: 1px solid #dcdcdc;
+}
+#menu_quick .mq .sitemapq{
+	background: url(../../../../main/images/btn_sitemap2.png) no-repeat 13px 8px;
+	width:48px;
+	height: 28px;
+	border-right:1px solid #dcdcdc;
+	border-bottom:1px solid #dcdcdc;
+}
+#menu_quick .mq .memberq{
+	background: url(../../../../main/images/btn_certify.png) no-repeat 17px 5px;
+	width:48px;
+	height: 28px;
+	border-bottom:1px solid #dcdcdc;
+}
+#menu_quick .mq .searchq{
+	background: url(../../../../main/images/sch_trigger03.png) no-repeat 15px 7px;
+	width:48px;
+	height: 28px;
+	border-right:1px solid #dcdcdc;
+}
+#menu_quick .mq .globalq{
+	background: url(../../../../main/images/btn_lang.png) no-repeat 15px 7px;
+	width:48px;
+	height: 28px;
+}
+#menu_quick ul>li>a{
+	display:block;
+	width:48px;
+	height: 28px;
+}
+
+
+/* ------------------------------------------------------------------------------------- */
+
+/* 원뎁호버 A */
+#nav>.bg_menu>ul>li:hover>a{color: #ffffff; background: #28388f;}
+/* 투뎁호버 A */
+#nav>.bg_menu>ul>li>ul>li>a:hover{text-decoration: underline; color: #000000;}
+/* 투뎁배경색 */
+#nav>.bg_menu>ul>li:hover>ul{background: #e1e1e1; 	transition-duration: 0.2s;}
+/* 투뎁트랜지션 */
+#nav:hover .bg_menu{height: 537px;}
+/* 투뎁전체배경 */
+#nav:hover .bg{height: 457px;  box-shadow: 0px 5px 5px #777777;}
+/* ------------------------------------------------------------------------ */
+
+/* 메인 중앙박스 */
+#container{
+	position: relative;
+	width: 1277px;
+	height: 2600px;
+	margin: 0 auto;
+	top: 110px;
+}
+/* 상단 라인 배경박스 */
+#top_bg{
+	width: 100%;
+	height: 110px;
+	position: relative;
+	top: 110px;
+	background: url(../images/s_visual01.jpg) no-repeat;
+	background-size: cover;
+}
+/* 상단 이미지 위치조정박스 */
+#top_bg .top_bg_box{
+	position: relative;
+	width: 1277px;
+	height: 110px;
+	margin: 0 auto;
+}
+/* 상단 이미지 제목박스 */
+#top_bg .top_bg_usebox{
+	position: absolute;
+	width: 249px;
+	height: 110px;
+	background: #6789c9;
+}
+/* 상단이미지 제목박스 안 글자 */
+#top_bg .top_bg_usebox span{
+	display: block;
+	width: 219px;
+	padding-left: 30px;
+	font-size: 35px;
+	color: #ffffff;
+	font-family: 'notokr-regular' , dotum, sans-serif;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 120px;
+}
+/* 상단 이미지 여백박스 */
+#top_bg .top_bg_blinkbox{
+	position: absolute;
+	left: 249px;
+	width: 598px;
+	height: 110px;
+}
+/* 상단 이미지 링크박스 */
+#top_bg .top_bg_linkbox{
+	position: absolute;
+	left: 847px;
+	width:430px;
+	height: 110px;
+}
+#top_bg .top_bg_linkbox .top_bg_linkbox_real{
+	width: 430px;
+	height: 25px;
+	margin-top: 60px;
+}
+#top_bg .top_bg_linkbox .top_bg_linkbox_real ul{
+	width: 430px;
+	height: 25px;
+}
+#top_bg .top_bg_linkbox .top_bg_linkbox_real ul li{
+	float: left;
+	font-size: 11px;
+	color: #a2b4ab;
+	line-height: 23px;
+}
+#top_bg .top_bg_linkbox .top_bg_linkbox_real ul li select{
+	width: 114px;
+	height: 21px;
+	background: url(../images/arr_family01.png) 95px center no-repeat rgba(255,255,255,0.2);
+	padding-left: 5px;
+	color: #ffffff;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-os-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+#top_bg .top_bg_linkbox .top_bg_linkbox_real ul li select:hover{
+	background: url(../images/arr_family01.png) 95px center no-repeat rgba(255,255,255,0.4);
+}
+#top_bg .top_bg_linkbox .top_bg_linkbox_real ul li option{
+	color: #333333;
+}
+/* 왼쪽 메뉴박스 */
+#menu_left{
+	width: 311px;
+	height: 1000px;
+}
+/* 왼쪽메뉴 박스안박스 */
+.menu_left_box{
+	width: 249px;
+	height: auto;
+}
+/* 왼쪽 메뉴 유엘크기 */
+.menu_left_box ul{
+	width: 249px;
+	height: auto;
+}
+/* 왼쪽메뉴 엘아이 크기 보더 배경 등등 */
+.menu_left_box ul li{
+	width: 229px;
+	height: 49px;
+	border-bottom: 1px solid #333333;
+	line-height: 50px;
+	padding-left: 20px;
+	font-weight: bold;
+	font-family: 'notokr-medium', sans-serif;
+	background: url(../images/arr_lnb01.png) 210px center no-repeat;
+}
+/* 왼쪽메뉴 글씨 */
+.menu_left_box ul li a{
+	display: block;
+	width: 229px;
+	height: 49px;
+	color: #333333;
+	font-size: 15px;
+}
+/* 왼쪽메뉴 글씨 호버 */
+.menu_left_box ul li a:hover{
+	text-decoration: underline;
+	color: #6789c9;
+}
+/* 왼쪽메뉴 소셜박스 */
+.menu_left_social_box{
+	width: 249px;
+	height: 150px;
+	background: url(../images/text_sns_t.png) 20px 80px no-repeat;
+}
+/* 왼쪽 메뉴 소셜 이미지 넣은 에이 */
+.menu_left_social_box a{
+	position: relative;
+	top: 120px;
+}
+/* 왼쪽메뉴 소셜 페이스북 이미지 백그라운드 */
+.facebook_bg{
+	display: block;
+	width: 123px;
+	height: 31px;
+	background: url(../images/icon_sns_f2.gif) no-repeat;
+	margin-right: 1.5px;
+}
+/* 왼쪽메뉴 소셜 트위터 이미지 백그라운드 */
+.twitter_bg{
+	display: block;
+	width: 123px;
+	height: 31px;
+	background: url(../images/icon_sns_t2.gif) no-repeat;
+	margin-left: 1.5px;
+}
+/* 메인 내용큰박스 */
+#main_contents{
+	width: 966px;
+	height: 2600px;
+}
+/* 내용 맨 위 타이틀박스 */
+.sub_top_title{
+	width: 966px;
+	height: 140px;
+}
+/* 내용 맨위 타이틀 */
+.sub_top_title h3{
+	width: 966px;
+	height: 60px;
+	color: #666666;
+	font-size: 50px;
+	font-family: 'notokr-medium', sans-serif;
+	padding-top: 33px;
+	padding-bottom: 4px;
+	line-height: 50px;
+	font-weight: 600;
+}
+/* 내용 맨위 타이틀 밑 글 */
+.sub_top_title p{
+	width: 966px;
+	height: 43px;
+	color: #888888;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	font-family: 'notokr-medium', sans-serif;
+	background: url(../images/line_subtop.gif) left bottom no-repeat;
+}
+/* 작은 타이틀1 박스 */
+.sub_under_title01{
+	width: 966px;
+	height: 75px;
+}
+/* 타이틀 박스 아래 유엘크기 */
+.sub_under_title01 ul{
+	width: 966px;
+	height: 75px;
+}
+/* 타이틀 박스 아래 유엘 밑 엘아이 글씨랑 리스트스타일 */
+.sub_under_title01 ul li{
+	width: 966px;
+	height: 75px;
+	color: #333333;
+	font-size: 18px;
+	list-style-image: url(../images/bullet02.png);
+	font-family: 'notokr-medium', sans-serif;
+	list-style-position : inside;
+	font-weight: bold;
+	line-height: 90px;
+}
+/* 지하철이랑 버스환승 요금박스 */
+#paybox{
+	width: 966px;
+	height: 1150px;
+}
+/* 지하철 요금박스 */
+.subway{
+	width: 966px;
+	height: 720px;
+}
+/* 서브웨이 테이블 위에 글씨 */
+.subway>ul>li{
+	list-style-image: url(../images/txt_style_icon1.gif);
+	list-style-position : inside;
+	font-family: 'notokr-medium', sans-serif;
+	padding-left: 20px;
+	width: 946px;
+	height: 36px;
+	line-height: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+/* 서브웨이 테이블 정의 */
+.subway_table{
+	width: 966px;
+	border-collapse:collapse;
+	text-align: center;
+	font-size: 14px;
+	font-family: 'notokr-medium', sans-serif;
+	letter-spacing: -1px;
+	color: #555555;
+}
+/* 각 테이블 위드값 */
+.subway_table .width_161{width: 161px;}
+.subway_table .width_482{width: 482px;}
+.subway_table .width_321{width: 321px;}
+/* 각 테이블 헤이트값 */
+.hei01{height: 38px;}
+.hei02{height: 162px;}
+.hei03{height: 73px;}
+.hei04{height: 73px;}
+.hei05{height: 96px;}
+.hei06{height: 121px;}
+.hei07{height: 71px;}
+/* 테이블 보더 바텀 */
+.subway_table td,.subway_table th{
+	border-bottom: 1px solid #cccccc;
+}
+/* 맨위에 백그라운드랑 보더 */
+.subway_table th{
+	border-top: 2px solid #82b2da;
+	background: #fafafa;
+}
+/* 글씨강조 */
+.subway_table strong{
+	font-weight: bold;
+	color: #222222;
+}
+/* 보더라이트 */
+.border_right{
+	border-right: 1px solid #cccccc;
+}
+/* 보더래프트 */
+.border_left{
+	border-left: 1px solid #cccccc;
+}
+/* 노 텍스트얼라인센터 가운데거 */
+.ntac{
+	text-align: left;
+	padding: 10px 0 10px 10px;
+	line-height: 170%;
+}
+/* 조조할인 글씨 */
+.morning_dc{
+	width: 966px;
+	height: 40px;
+	font-size: 13px;
+	font-family: 'notokr-medium', sans-serif;
+	padding-top: 10px;
+	color: #5f5f5f;
+}
+/* 지하철버스 환승 요금박스 */
+.subway_bus{
+	width: 966px;
+	height: 420px;
+}
+/* 지하철버스 환승 제목 박스 */
+.subway_bus_title_box{
+	width: 966px;
+	height: 75px;
+}
+/* 지하철버스 테이블 위에 글씨 */
+.subway_bus_title_box>ul>li{
+	list-style-image: url(../images/txt_style_icon1.gif);
+	list-style-position : inside;
+	font-family: 'notokr-medium', sans-serif;
+	padding-left: 20px;
+	width: 946px;
+	height: 36px;
+	line-height: 100px;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+/* 지하철버스 테이블박스 */
+.subway_bus_table_box{
+	width: 966px;
+	height: 136px;
+}
+/* 지하철버스 테이블 */
+.subway_bus_table{
+	width: 966px;
+	border-collapse:collapse;
+	text-align: center;
+	font-size: 14px;
+	font-family: 'notokr-medium', sans-serif;
+	letter-spacing: -1px;
+	color: #555555;
+}
+/* 지하철 버스 테이블 보더 */
+.subway_bus_table td{
+	border-bottom: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;	
+}
+/* 지하철 버스 테이블 위드하이값 */
+.subway_bus_table .height_57{height: 57px;}
+.subway_bus_table .height_76{height: 76px;}
+.subway_bus_table .width_337{width: 337px; border-left: none; font-weight: bold; line-height: 150%;}
+.subway_bus_table .width_144{width: 144px; font-weight: bold; color: #333333;}
+.subway_bus_table .width_463{width: 463px; text-align: left; padding-left: 20px;}
+
+/* 지하철 버스 텍스트박스 */
+.subway_bus_text_box{
+	width: 966px;
+	height: 200px;
+	font-size: 14px;
+	font-family: 'notokr-medium', sans-serif;
+	letter-spacing: -1px;
+	color: #555555;
+	line-height: 160%;
+	margin-top: 9px;
+}
+
+/* 작은 타이틀2 박스 */
+.sub_under_title02{
+	width: 966px;
+	height: 75px;
+}
+/* 타이틀 박스 아래 유엘크기 */
+.sub_under_title02 ul{
+	width: 966px;
+	height: 75px;
+}
+/* 타이틀 박스 아래 유엘 밑 엘아이 글씨랑 리스트스타일 */
+.sub_under_title02 ul li{
+	width: 966px;
+	height: 75px;
+	color: #333333;
+	font-size: 18px;
+	list-style-image: url(../images/bullet02.png);
+	font-family: 'notokr-medium', sans-serif;
+	list-style-position : inside;
+	font-weight: bold;
+	line-height: 90px;
+}
+/* 키로미터당 요금박스 */
+#km_paybox{
+	width: 966px;
+	height: 1140px;
+}
+/* 키로미터당 요금 테이블 */
+.km_paybox_table{
+	border-collapse:collapse;
+	text-align: center;
+	letter-spacing: -1px;
+	width: 966px;
+	color: #555555;
+	font-size: 15px;
+	font-family: 'notokr-medium', sans-serif;
+}
+/* 키로미터당 요금 th td 보더값 높이값 */
+.km_paybox_table th,.km_paybox_table td{
+	border-bottom: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	height: 39px;
+	width: 160px;
+}
+/* th부분 글자색이랑 배경색 */
+.km_paybox_table th{
+	color: #333333;
+	background: #fafafa;
+}
+/* 맨위에 파란색 보더 */
+.bdrt{
+	border-top: 2px solid #82b2da;
+}
+/* 맨앞줄 보더없애고 위드값조정 */
+.km_paybox_table .width_161{
+	width: 161px;
+	border-left: none;
+}
+/* --------------------------------------------------------------------------------------- */
+
+/* 푸터박스 배경 */
+#footer{
+	position:absolute;
+	left:0;
+	width: 100%;
+	height: 80px;
+	background: #5b6268;
+	bottom: -200px;
+}
+/* 푸터박스 중앙정렬 */
+#foot{
+	position: relative;
+	width: 1288px;
+	height: 80px;
+	margin: 0 auto;
+}
+/* 푸터글자 사이 선 */
+#foot .foott2{
+	background: url(../../../../main/images/line_footer.png) 0px 25px no-repeat;
+}
+#foot .foott3{
+	background: url(../../../../main/images/line_footer.png) 0px 25px no-repeat;
+}
+#foot .foott4{
+	background: url(../../../../main/images/line_footer.png) 0px 25px no-repeat;
+}
+#foot .foott5{
+	background: url(../../../../main/images/line_footer.png) 0px 25px no-repeat;
+}
+#foot .foott6{
+	background: url(../../../../main/images/line_footer.png) 0px 25px no-repeat;
+}
+/* 푸터글자 */
+.foott a{
+	color: #ffffff;
+	font-size: 14px;
+	padding: 0px 20px;
+	font-weight: 600;
+}
+.foott .nonpad{
+	padding: 0 20px 0 0;
+}
+.foott a:hover{
+	text-decoration: underline;
+}
+/* 두번째글자색 */
+#foot .foott2 a{
+	color: #3cc19e;
+}
+/* 푸터글자박스 위치조정 */
+.foot_text{
+	width: 1288px;
+	height: 21px;
+	line-height: 60px;
+}
+/* 카피라이트 위치및 글자 */
+.copyright{
+	clear:both;
+	position: relative;
+	top: -12px;
+	font-size: 14px;
+	letter-spacing: -1px;
+	color: #cccccc;
+}
+/* wa이미지 */
+.wa{
+	position: absolute;
+	left: 83%;
+	top: 17px;
+}
+/* 패밀리박스 크기 및 위치 */
+.family_box{
+	width: 250px;
+	height: 35px;
+	position: absolute;
+	top: 22.5px;
+	left: 98%;
+}
+/* 패밀리사이트 인풋박스 크기 및 보더 */
+.family_box .family_input{
+	width: 204px;
+	height: 33px;
+	border: 1px  solid #91969a;
+	border-right: none;
+}
+/* 패밀리사이트 인풋박스 에이태그 */
+.family_box .family_input a{
+	display: block;
+	width: 189px;
+	height: 33px;
+	background: url(../../../../main/images/arr_family01.png) 180px 13px no-repeat;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 33px;
+	padding-left: 15px;
+	
+}
+/* 패밀리사이트 인풋박스 에이태그 호버 */
+.family_box .family_input a:hover{
+	text-decoration: underline;
+	background: url(../../../../main/images/arr_family01.png) 180px 13px no-repeat rgba(255,255,255,0.1);
+}
+/* 패밀리사이트 고박스 크기및 배경색 */
+.family_box .family_go{
+	width: 45px;
+	height: 35px;
+	background: #1ed6b2;
+}
+/* 패밀리사이트 고박스 에이태그 */
+.family_box .family_go a{
+	display: block;
+	width: 45px;
+	height: 35px;
+	color: #ffffff;
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 35px;
+}
+/* 패밀리사이트 고버튼 호버 */
+.family_box .family_go a:hover{
+	background: rgba(255,255,255,0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+﻿*{margin: 0px; padding: 0px;}
+a{text-decoration: none; color:#002db3; }
+body{
+	background:url(../images/metro.jpg)
+}
+h1{
+	color: #002db3;
+	font-size: 3em;
+	margin-top: 100px;
+	margin-left: 110px;
+}
+#loginForm fieldset{
+	background: url(../images/crt.gif) no-repeat 30px 300px;
+	width: 300px;
+	height: 500px;
+	border: 5px solid #2d00b3;
+	padding: 50px;
+	border-radius: 15px;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+#userId, #userPWD{
+	border-style: none;
+	width: 250px;
+	border-bottom: 1px solid #999999;
+	margin-bottom: 5px;
+	margin-left: 15px;
+	padding: 5px;
+}
+#userId:hover, #userPWD:hover{
+	transition-duration: 0.5s;
+	background: #efefef;
+}
+#userId:focus, #userPWD:focus{
+	transition-duration: 1s;
+	background: #dfefff;
+}
+#login{
+	float:left;
+}
+#btn1{
+	clear: both;
+	margin-left: 45px;
+	padding: 10px 20px;
+}
+#btn1 label{
+	font-size: 12px;
+	vertical-align: top;
+	margin-left: 2px;
+	font-weight: bold;
+	line-height: 20px;
+	cursor: pointer;
+}
+#btnLogin{
+	display: block;
+	background: #4c79ff;
+	width: 260px;
+	height: 50px;
+	border-style: none;
+	position: relative;
+	float: bottom;
+	color: #ffffff;
+	font-size: 2em;
+	margin-left: 15px;
+	cursor: pointer;
+}
+#btnLogin:hover{
+	transition-duration: 0.5s;
+	background: #4ca6ff;
+}
+#btn2{
+	margin-left: 5px;
+	margin-top: 10px;
+	padding: 10px;
+}
+#btn2 input{
+	background: #ffffff;
+	border-style: none;
+	border-radius: 5px;
+	color: #575748;
+	padding: 5px 15px;
+	font-weight: bold;
+	margin-top: -10px;
+	cursor: pointer;
+}
+#btn2 input:hover{
+	transition-duration: 0.3s;
+	background: #73b9ff;
+	color: #ffffff;
+}

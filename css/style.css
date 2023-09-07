@@ -1,0 +1,278 @@
+/* 전체 틀 */
+
+body{background: #ffffff;}
+#wrap{width: 100%; position: relative; top: 80px;}
+#header{width: 100%; height: auto; background: #000; }
+#container{width: 100%; height: auto;}
+#footer{width: 100%; height: 900px; background: #000; margin-top: 50px; position: relative;}
+
+
+#scroll{width: 200px; height: 100px; font-size: 3em; color: #fff;
+position: fixed; top: 30px; right: 0px; z-index:10001; display:none;}
+
+.popup{width: 100%; height: 100%; background: #000; color: #fff; position: fixed; top: 0; left: 0; z-index: 10000; display: none;}
+
+.tc{text-align: center;}
+.ffn{font-family: 'Nanum Gothic', sans-serif;}
+.fcw{color: #fff;}
+.ml0{margin-left: 0;}
+.mr0{margin-right: 0;}
+
+
+
+/* 네비게이션 */
+
+#gnb{
+	width: 100%; height: auto; position: fixed; top:0;
+	padding: 5px 0 ; z-index:10000; background: #000;
+}
+.gnb_box{width: 1500px; height: 70px; margin: 0 auto;}
+.logo{width: 10%; height: auto; float: left;}
+.logo a{
+	background: url(../images/logo_w.png) no-repeat;
+	width: 150px;
+	height: 70px;
+}
+.logo a.on{
+    background: url(../images/logo_b.png) no-repeat;
+}
+.menu{width: 90%; height: auto; float: left;}
+.menu ul{width: 100%; height: auto; float: right;}
+.menu ul li{width: 10%; height: auto; float: left;}
+.menu ul li a{
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	font-size: 1.3em;
+	color: #666;
+	transition-duration: 0.3s;
+}
+.menu ul li a.on{color: #fff; text-shadow: 0px 0px 20px #fff;}
+.menu ul li a.black{color: #000000;}
+.menu ul li a:hover{color: #fff; text-shadow: 0px 0px 20px #fff;}
+
+
+
+/* 헤더영역 */
+
+.header_box{width:100%; height: 800px; margin:0 auto; position: relative; background: url(../images/header_bg.png) center center no-repeat;}
+.header_box_txt{width: 100%; height: auto; margin: 0 auto; position: relative; top:120px;}
+.header_txt01{font-size: 25px; letter-spacing: 5px; font-weight: 800;}
+.header_txt02{font-size: 80px; letter-spacing: 5px; font-weight: 800;}
+.header_txt03{font-size: 25px; letter-spacing: 3px; font-weight: 800; margin-top: 50px;}
+
+
+
+
+/* 컨테이너 영역 */
+
+.port_wrap{width: 100%; height: 700px; margin: 50px auto 0 auto; position: relative;}
+
+.port_box{width: 1500px; height: 100%; margin: 0 auto; position: relative;}
+
+
+
+/************************* port00 *************************/
+
+.port00{background: #000; margin: 0 auto;}
+.port00_bgBox{width: 0; height: 100%; position: absolute; top: 0; right: 0; background: url(../images/port00_bg.png) center center no-repeat;}
+.port00_txtBox{width: 1500px; height: 450px; position: relative; top: 120px; margin: 0 auto; border-left: 5px solid #fff; padding-top: 5px; opacity: 0;}
+.port00_txtBox h2{font-size: 60px; font-weight: 600; padding-bottom: 50px; padding-left: 0; opacity: 0;}
+.port00_txtBox p{font-size: 18px; font-weight: 400; line-height: 45px; padding-left: 0; opacity: 0;}
+
+
+
+/************************* port01 *************************/
+
+.port01{background: #dbe5e7; height: 600px;}
+.port01_box{width: 1500px;}
+.port01_boxL{width: 900px; height: 100%; float: left; background: url(../images/port01_bgL.png) center center no-repeat;}
+.port01_boxR{width: 500px; height: 100%; margin-left: 100px; float: left;}
+.port01_boxR_p{font-size: 30px; font-weight: 600; margin-top: 120px; letter-spacing: 5px; padding-left: 5px;}
+.port01_boxR_h2{font-size: 60px; font-weight: 800; margin-top: 10px; letter-spacing: 5px;}
+.port01_boxR_span{font-size: 18px; font-weight: 400; margin-top: 30px; line-height: 30px; color: #444; display: block;}
+.port01_boxR_btn{width: 130px; height: 50px; font-size: 20px; font-weight: 600; margin-top: 50px; border-radius: 2px; line-height: 50px; border: 2px solid #000; transition-duration: 0.2s; color: #000;}
+.port01_boxR_btn:hover{background: #000; color: #fff;}
+
+
+
+/************************* port02 *************************/
+
+.port02{background: #2a3652; height: 850px;}
+.port02_boxL{width: 650px; height: 100%; float: left;}
+.port02_boxL_h2{font-size: 50px; font-weight: 800; margin-top: 250px;}
+.port02_boxL_p{font-size: 18px; font-weight: 400; margin-top: 30px; letter-spacing: 2px; line-height: 30px;}
+.port02_boxL_btn{width: 200px; height: 50px; font-size: 18px; font-weight: 400; margin-top: 100px; float: left; border-radius: 5px; line-height: 50px; border: 2px solid #fff; transition-duration: 0.2s; color:#ffffff; text-align: center; letter-spacing: 1px;}
+.port02_btn02{ margin-left: 20px;}
+.port02_boxL_btn:hover{background: #fff; color:#000; font-weight: 800;}
+
+
+.port02_boxR{width: 750px; height: 100%; float: left; margin-left: 100px; position: relative;}
+.port02_boxR_ulBox1{width: 350px; height: 850px; position: relative; top: 0; overflow: hidden; float: left;}
+
+@keyframes verticalScroll {
+    0% {transform: translateY(0); }
+    100% {transform: translateY(-1320px); }
+}
+
+.port02R_ul{width: 350px; height: auto; position: relative; top: 0; animation: verticalScroll 20s linear infinite;}
+.port02R_ul li{width: 350px; height: 170px; margin-bottom: 50px;}
+.port02R_ul li>img{width: 100%; height: 100%;}
+.port02_boxR_ulBox2{width: 350px; height: 850px; position: relative; top: 0; overflow: hidden; float: left; margin-left: 50px;}
+.port02R_ul2{width: 350px; height: auto; position: relative; top: -110px; animation: verticalScroll 20s linear infinite;}
+.port02R_ul2 li{width: 350px; height: 170px; margin-bottom: 50px;}
+.port02R_ul2 li>img{width: 100%; height: 100%;}
+
+
+
+/************************* port03 *************************/
+
+.port03{height: auto;}
+.port03_box{width: 100%;}
+.port03_h2{font-size: 50px; font-weight: 800; padding-top: 70px;}
+.port03_p{font-size: 18px; font-weight: 400; margin: 30px 0 50px 0; letter-spacing: 1px; line-height: 30px;}
+
+.port03_box_btm{width: 100%; height: 645px; background: #dbe5e7; position: relative; overflow: hidden;}
+.port03_box_ut{width: 1500px; height: auto; padding-top: 50px; margin: 0 auto;}
+.port03_box_ut p{font-size: 30px; font-weight: 800; width: 200px; height: 70px; line-height: 70px; border-bottom: 3px solid #000; margin: 0 auto;}
+.port03_box_ut p span{font-size: 20px;}
+
+.port03_box_poster ul{width: 100%; height: 350px; padding: 50px 0;}
+.port03_box_poster ul li{width: 250px; height: 350px; float: left; margin-left: 62.5px;}
+.port03_box_poster ul li:first-child{margin-left: 0;}
+.port03_box_poster ul li img{width: 100%; height: 100%;}
+
+.port03_box_sns ul{width: 100%; height: 1050px; padding: 50px 0 0 0;}
+.port03_box_sns ul li{width: 300px; height: 300px; float: left; margin: 0 37.5px 50px 37.5px;}
+.port03_box_sns ul li img{width: 100%; height: 100%;}
+
+.port03_box_leaflet ul{width: 100%; height: 2200px; padding: 50px 0 0 0;}
+.port03_box_leaflet ul li{width: 700px; height: 500px; float: left; margin: 0 25px 50px 25px;}
+.port03_box_leaflet ul li:last-child{width: 1450px;}
+.port03_box_leaflet ul li img{width: 100%; height: 100%;}
+
+.port03_box_banner ul{width: 100%; height: 2960px; padding: 50px 0 0 0;}
+.port03_box_banner ul li{width: 1000px; height: 130px; float: left; margin: 0 250px 50px 250px;}
+.port03_box_banner ul li:nth-child(4){height: 90px;}
+.port03_box_banner ul li:nth-child(5){height: 1130px;}
+.port03_box_banner ul li:nth-child(6),.port03_box_banner ul li:nth-child(7){height: 500px;}
+.port03_box_banner ul li img{width: 100%; height: 100%;}
+
+.port03_box_etc ul{width: 100%; height: 2300px; padding: 50px 0 0 0;}
+.port03_box_etc ul li{width: 1200px; height: 250px; float: left; margin: 0 150px 50px 150px;}
+.port03_box_etc ul li:first-child{height: 700px;}
+.port03_box_etc ul li:last-child{height: 900px;}
+.port03_box_etc ul li img{width: 100%; height: 100%;}
+
+.port03_btm_more{width: 100%; height: 50px; font-size: 25px; font-weight: 800; background: url(../images/more_w.png) center center no-repeat;color:#fff; line-height: 50px; transition-duration: 0.5s; position: absolute; bottom: 0; opacity: 0.4; margin: 0 auto;}
+.port03_btm_more.fix{position: fixed;}
+
+.port03_btm_more:hover{color:#fff; background: url(../images/more.png) center center no-repeat; height: 70px; line-height: 70px; opacity: 1;}
+.port03_btm_more.on:hover{color:#fff; background: url(../images/close.png) center center no-repeat; height: 70px; line-height: 70px; opacity: 1; z-index: 11;}
+
+.port03_btm_more:visited{color: #fff;}
+
+
+
+/************************* port04 *************************/
+
+.port04{height:800px; background: #000;}
+.port04_boxL{width: 650px; height: 100%; float: left;}
+.port04_boxL_h2{font-size: 50px; font-weight: 800; margin-top: 280px;}
+.port04_boxL_p{font-size: 18px; font-weight: 400; margin-top: 30px; letter-spacing: 2px; line-height: 30px;}
+
+.port04_boxR{width: 750px; height: 100%; float: left; margin-left: 100px;  position: relative;}
+.port04_boxR_video{width: 720px; height: 500px; position: absolute; top: 120px; left: 15px;z-index: 2;}
+.ppt_video{object-fit: cover;}
+.ppt_video:fullscreen{object-fit: contain;}
+
+.port04_boxR_bgBox{background: url(../images/port04R_bg.png) center center no-repeat; position: absolute; left: -25px; top: 73px; width: 800px; height: 700px; z-index: 1;}
+
+
+
+/************************* port05 *************************/
+
+.port05{height: auto;}
+.port05_box{width: 100%;}
+.port05_h2{font-size: 50px; font-weight: 800; padding-top: 70px;}
+.port05_p{font-size: 18px; font-weight: 400; margin: 30px 0 50px 0; letter-spacing: 1px; line-height: 30px;}
+
+.port05_box_btm{width: 100%; height: 550px; background: #2a3652; position: relative; overflow: hidden;}
+.port05_box_youtube{width: 1700px; height: 100%; margin: 0 auto; position: relative; overflow: hidden;}
+.port05_box_youtube ul{width: 2200px; height: 340px; margin-top: 105px; position: relative; left: -250px;}
+.port05_box_youtube ul li{width: 200px; height: 110px; margin: 115px 25px; float: left; background: #ccc; position: relative; transition-duration: 0.3s;}
+.port05_box_youtube ul li.activeSize{width: 600px; height: 340px; margin: 0 50px;}
+.port05_box_youtube ul li>iframe{position: absolute; left: 0; top: 0; display: none; width: 100%; height: 100%;}
+.port05_box_youtube ul li.activeFrame>iframe{display: block;}
+.yt_btn{width: 70px; height: 100%; position: absolute; cursor: pointer; transition-duration: 0.3s; top: 0;}
+.youtube_btnLeft{background: url(../images/youtube_btnLeft.png) center center no-repeat; left: 0;}
+.youtube_btnRight{background: url(../images/youtube_btnRight.png) center center no-repeat; right: 0;}
+.yt_btn:hover{background-color: rgba(255, 255, 255, 0.2);}
+
+
+
+/************************* port06 *************************/
+
+.port06{background-color: #ffffff; height: 900px; display: block; position: relative; transition: 0.5s;}
+.port06.on{display: block; position: fixed; top: 0; left: 0; width: 100%; z-index: 10;}
+.port06_boxL{width: 800px; height: 100%; float: left;}
+.port06_boxL img{width: 100%; height: 100%; transition-duration: 0.3s;}
+
+
+.port06_boxR{width: 650px; height: 100%; float: left; margin-left: 50px; position: relative;}
+.port06_boxR_h2{font-size: 50px; font-weight: 800; margin-top: 100px; color: #eee; transition: color 0.5s;}
+.port06_boxR_h2:first-child{margin-top: 210px;}
+.port06_boxR_p{font-size: 16px; font-weight: 600; margin-top: 20px; color: #000; transition-duration: 0.5s; line-height: 30px; letter-spacing: 0.3px; height: 0; overflow: hidden;}
+.port06_boxR_p span{font-weight: 800;}
+
+.port_fake{background: #fff; height: 3000px;}
+.port_fake_boxL{width: 800px; height: 100%; float: left; background: url(../images/port06_bg_L.png) no-repeat;}
+
+
+.port_fake_boxR{width: 650px; height: 100%; float: left; margin-left: 50px; position: relative;}
+.port_fake_boxR_h2{font-size: 50px; font-weight: 800; margin-top: 100px; color: #eee;}
+.port_fake_boxR_h2:first-child{margin-top: 210px;}
+
+
+
+/************************* port07 *************************/
+
+.port07{background: #0fb753; height: 850px; overflow: hidden;}
+.port07_box{width: 1500px; height: 100%; margin: 0 auto;}
+.port07_box_h2{font-size: 50px; font-weight: 800; margin-top: 250px;}
+.port07_box_p{font-size: 18px; font-weight: 400; margin-top: 30px; letter-spacing: 2px; line-height: 30px;}
+.port07_box_p span{font-size: 13px; line-height: 50px;}
+.port07_box_btn{width: 300px; height: 50px; font-size: 18px; font-weight: 600; margin-top: 100px; float: left; border-radius: 5px; line-height: 50px; transition-duration: 0.2s; color:#239150; text-align: center; letter-spacing: 1px; background: #fff;}
+.port07_btn02{ margin-left: 20px;}
+.port07_box_btn:hover{background: #fff; color:#239150; font-weight: 600; box-shadow: 0px 0px 15px #fff;}
+
+
+.port07_bg{width: 1100px; height: 100%; position: absolute; background: url(../images/port07_bg.png) right center no-repeat; right: 0; top: 0;}
+
+
+
+
+
+/************************* footer *************************/
+
+.footer_box{width: 1500px; height: 100%; margin: 50px auto; position: relative; }
+.footer_top{width: 100%; height: 550px; padding-top: 125px;}
+.footTbox{width: 450px; height: 100%; float: left; padding-left: 50px;}
+.footTbox h4{font-size: 20px; color: #fff; padding-bottom: 30px;}
+.footTbox h4 span{font-size: 15px;}
+.footTbox p{font-size: 15px; color: #fff; padding-bottom: 30px; line-height: 30px;}
+
+
+.footer_bottom{width: 100%; height: 200px; padding-top: 25px; text-align: center;}
+.footer_bottom h2{font-size: 40px; color: #fff; padding-bottom: 30px;}
+.footer_bottom p{font-size: 18px; color: #fff; padding-bottom: 30px;}
+.footer_bottom span{font-size: 13px; color: #fff; display: block;}
+
+
+
+
+
+
+
+

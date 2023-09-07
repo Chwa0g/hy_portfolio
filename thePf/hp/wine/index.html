@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>오늘, 와인한잔</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/map.js"></script>
+</head>
+<body>
+	<div id="scroll">0</div>
+	<div id="header">
+		<div id="gnb">
+			<div class="logo"><a href="#"></a></div>
+			<div class="menu"> 
+				<ul class="menu_ul">
+					<li>
+						<a href="#" class="oneD">WineInfo</a>
+						<div class="twoD">
+							<ul>
+								<li><a href="#">오늘, 소개</a></li>
+								<li><a href="#">오늘, 연혁</a></li>
+								<li><a href="#">오늘, CI & BI</a></li>
+								<li><a href="#">오늘, CEO</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="oneD">Menu</a>
+						<div class="twoD">
+							<ul>
+								<li><a href="#">Salad</a></li>
+								<li><a href="#">Bread</a></li>
+								<li><a href="#">Fried</a></li>
+								<li><a href="#">Italian</a></li>
+								<li><a href="#">Greek</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="oneD">Wine</a>
+						<div class="twoD">
+							<ul>
+								<li><a href="#">Red Wine</a></li>
+								<li><a href="#">White Wine</a></li>
+								<li><a href="#">Rose Wine</a></li>
+								<li><a href="#">Special Wine</a></li>
+								<li><a href="#">Only Bottle</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="oneD">Store</a>
+						<div class="twoD">
+							<ul>
+								<li><a href="#">매장찾기</a></li>
+								<li><a href="#">가맹안내</a></li>
+								<li><a href="#">이달의 매장</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="oneD">Help</a>
+						<div class="twoD">
+							<ul>
+								<li><a href="#">고객센터</a></li>
+								<li><a href="#">가맹신청</a></li>
+								<li><a href="#">Q & A</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div> <!-- class="menu" -->
+		</div> <!-- id="gnb" -->
+		<div id="close"></div>
+	</div> <!-- id="header" class="cf" -->
+	
+	<div id="container" class="cf">
+	
+		<div class="section01">
+			<h1 class="neon">오늘, 와인한잔.</h1>
+			<h2 class="neon">Today, <span>A</span> Glass of Wine.</h2>
+		</div>
+		
+		<div class="section02">
+			<div class="sec02_bg">
+				<div class="sec02_bg01 active secBg"></div>
+				<div class="sec02_bg02 secBg"></div>
+				<div class="sec02_bg03 secBg"></div>
+				<div class="sec02_bg04 secBg"></div>
+				<div class="sec02_bg05 secBg"></div>
+			</div>
+			<div class="sec02_bgcover"></div>
+			<div class="left"></div>
+			<div class="right"></div>
+			<div class="button">
+				<ul>
+					<li class="active"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="sec02_text">
+				<div class="sec02_txt01 active">
+					오늘하루도 고생했어,
+					<br/> <span>토닥토닥</span>
+				</div>
+				<div class="sec02_txt02">
+					너와 나를 이어주는 다리,
+					<br/> <span>와인한잔</span>
+				</div>
+				<div class="sec02_txt03">
+					힘들다면 내게 기대,
+					<br/> <span>달래줄게</span>
+				</div>
+				<div class="sec02_txt04">
+					언제나 함께 하는 우리,
+					<br/> <span>응원할게</span>
+				</div>
+				<div class="sec02_txt05">
+					맛있는 음식과 함께 항상,
+					<br/> <span>행복하자</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section03">
+			<div class="sec03_box">
+				<div class="sec03_left fl">
+					<h2 class="sec03_menu">Menu</h2>
+					<ul>
+						<li class="on">Salad</li>
+						<li>Bread</li>
+						<li>Fried</li>
+						<li>Italian</li>
+						<li>Greek</li>
+					</ul>
+				</div>
+				<div class="sec03_right fl">
+					<div class="sec03_topTit">
+						<div class="s03_saladTit on">Fresh Salad</div>
+						<div class="s03_breadTit">Healthy Bread</div>
+						<div class="s03_friedTit">Crispy Fried</div>
+						<div class="s03_italyTit">Tasty Italy</div>
+						<div class="s03_greekTit">Sea of greek</div>
+					</div>
+					<div class="sec03_menuBg">
+						<div class="s03_saladBg 03bg on">
+							<div class="sal_bg01"><a href="#">More</a></div>
+							<div class="sal_bg02"><a href="#">More</a></div>
+							<div class="sal_bg03"><a href="#">More</a></div>
+							<div class="sal_bg04"><a href="#">More</a></div>
+						</div>
+						<div class="s03_breadBg 03bg">
+							<div class="bre_bg01"><a href="#">More</a></div>
+							<div class="bre_bg02"><a href="#">More</a></div>
+							<div class="bre_bg03"><a href="#">More</a></div>
+							<div class="bre_bg04"><a href="#">More</a></div>
+						</div>
+						<div class="s03_friedBg 03bg">
+							<div class="fri_bg01"><a href="#">More</a></div>
+							<div class="fri_bg02"><a href="#">More</a></div>
+							<div class="fri_bg03"><a href="#">More</a></div>
+							<div class="fri_bg04"><a href="#">More</a></div>
+						</div>
+						<div class="s03_italyBg 03bg">
+							<div class="ita_bg01"><a href="#">More</a></div>
+							<div class="ita_bg02"><a href="#">More</a></div>
+							<div class="ita_bg03"><a href="#">More</a></div>
+							<div class="ita_bg04"><a href="#">More</a></div>
+						</div>
+						<div class="s03_greekBg 03bg">
+							<div class="gre_bg01"><a href="#">More</a></div>
+							<div class="gre_bg02"><a href="#">More</a></div>
+							<div class="gre_bg03"><a href="#">More</a></div>
+							<div class="gre_bg04"><a href="#">More</a></div>
+						</div>
+					</div>
+					<div class="sec03_botTxt">
+						<div class="s03_saladTxt">
+							<h3 class="active">Enjoy wine with a fresh vegetable salad. <br/>
+							<span>신선한 야채 샐러드와 함께 와인을 즐기세요.</span></h3>
+							<div class="sal_txt01">
+								<h2>Triple bean salad</h2>
+								<p>세가지 종류의 콩과 참외, 레드비트를 계졀채소와 함께 곁들여 먹는 샐러드</p>
+								<h3>8,500￦</h3>
+							</div>
+							<div class="sal_txt02">
+								<h2>Avocado salad</h2>
+								<p>아보카도를 메인으로 토마토, 익힌 당근과 버섯, 반숙 계란 등을 섞어 먹는 샐러드</p>
+								<h3>8,900￦</h3>
+							</div>
+							<div class="sal_txt03">
+								<h2>Fish always together tarrtarr salad</h2>
+								<p>잘게 다진 생선살을 익혀 타르타르 소스를 발라 말은 피쉬롤과 함께 신선한 야채를 곁들여 먹는 샐러드</p>
+								<h3>10,300￦</h3>
+							</div>
+							<div class="sal_txt04">
+								<h2>Sweet pumpkin like strawberry salad</h2>
+								<p>단호박을 익혀 베이스를 만들고 생딸기를 갈아 단호박 위에 뿌린 후 크림치즈로 마무리 하여 달콤새콤하게 즐길 수 있는 샐러드</p>
+								<h3>7,700￦</h3>
+							</div>
+						</div>
+						<div class="s03_breadTxt">
+							<h3>A glass of wine with freshly baked bread in the morning <br/>
+							<span>아침에 갓 구운 빵과 함께 와인한잔</span></h3>
+							<div class="bre_txt01">
+								<h2>A mouseful of Bruschetta</h2>
+								<p>마늘바게트 위에 토마토 페이스트를 올려 먹는 한입크기의 브루스게타</p>
+								<h3>5,500￦</h3>
+							</div>
+							<div class="bre_txt02">
+								<h2>Salmon love bread.</h2>
+								<p>훈제연어 위에 특제레몬크림소스와 구운가지, 토마토, 빵을 곁들여 먹는 요리</p>
+								<h3>9,800￦</h3>
+							</div>
+							<div class="bre_txt03">
+								<h2>French toast meet sugar , That's France</h2>
+								<p>계란물을 입힌 식빵을 튀겨 슈가파우더를 뿌린 후 베이컨을 곁들여 먹는 프렌치토스트</p>
+								<h3>6,300￦</h3>
+							</div>
+							<div class="bre_txt04">
+								<h2>There is meat above me.</h2>
+								<p>부드러운 잉글리쉬 머핀 위에 숯불에 구운 쇠고기와 특제소스,양파,아보카도를 올려 만든 홈메이드식 요리</p>
+								<h3>10,500￦</h3>
+							</div>
+						</div>
+						<div class="s03_friedTxt">
+							<h3>Crispy fries will add flavor to your wine.<br/>
+							<span>바삭한 튀김은 와인의 풍미를 더해줄 거에요.</span></h3>
+							<div class="fri_txt01">
+								<h2>The sea meets the sky</h2>
+								<p>특제양념에 졸인 닭 날개튀김과 바삭한 오징어를 칠리소스에 찍어먹는 요리</p>
+								<h3>9,900￦</h3>
+							</div>
+							<div class="fri_txt02">
+								<h2>British fish and chips</h2>
+								<p>영국식 피쉬앤 칩스로 부드러운 생선튀김과 감자 위에 레몬을 뿌려 먹는 요리</p>
+								<h3>11,800￦</h3>
+							</div>
+							<div class="fri_txt03">
+								<h2>Chicken is a delicacy</h2>
+								<p>숙성시킨 닭을 수제튀김옷을 입혀 튀긴 바삭한 치킨요리</p>
+								<h3>13,500￦</h3>
+							</div>
+							<div class="fri_txt04">
+								<h2>Hearts are delicious</h2>
+								<p>닭가슴살을 두들겨 부드럽게 만들어 훈제시킨 후 튀겨 특제 소스를 발라 라임즙을 뿌려먹는 요리</p>
+								<h3>10,200￦</h3>
+							</div>
+						</div>
+						<div class="s03_italyTxt">
+							<h3>Italian food and wine are romantic.<br/>
+							<span>이탈리아 음식과 와인은 낭만이죠.</span></h3>
+							<div class="ita_txt01">
+								<h2>crispy outside, moist inside</h2>
+								<p>최고급 한우를 숯불에 구워 파인애플을 곁들여 먹는 스테이크</p>
+								<h3>19,900￦</h3>
+							</div>
+							<div class="ita_txt02">
+								<h2>The best friend that tomato ever met pasta</h2>
+								<p>수제 토마토소스에 베이컨과 야채를 넣어 면과 함께 볶은 파스타</p>
+								<h3>10,900￦</h3>
+							</div>
+							<div class="ita_txt03">
+								<h2>Pizza love sweet pumpkin</h2>
+								<p>정통 이탈리안방식으로 만든 단호박과 해산물이 들어간 피자</p>
+								<h3>15,300￦</h3>
+							</div>
+							<div class="ita_txt04">
+								<h2>Sotto sotto risotto</h2>
+								<p>해산물 베이스의 양념에 밥을 볶아 만든 리조또 위에 모짜렐라 치즈를 올린 요리</p>
+								<h3>11,200￦</h3>
+							</div>
+						</div>
+						<div class="s03_greekTxt">
+							<h3>wine the waters of the Mediterranean<br/>
+							<span>지중해의 바다를 와인으로 채우다.</span></h3>
+							<div class="gre_txt01">
+								<h2>Shrimp bearing the Mediterranean Sea</h2>
+								<p>지중해산 새우를 올리브유에 끓여 빵을 찍어먹는 지중해식 감바스</p>
+								<h3>8,900￦</h3>
+							</div>
+							<div class="gre_txt02">
+								<h2>Red sea in a bowl</h2>
+								<p>각종 해산물을 토마토 베이스 수프에 끓인 요리</p>
+								<h3>7,300￦</h3>
+							</div>
+							<div class="gre_txt03">
+								<h2>Cover the Mediterranean with flour</h2>
+								<p>각종 야채와 해산물을 볶아 쫄깃한 빵 안에 넣고 말은 지중해식 파타스</p>
+								<h3>5,700￦</h3>
+							</div>
+							<div class="gre_txt04">
+								<h2>Serve the king of the sea</h2>
+								<p>신선한 가재를 익혀 버터와 마늘로 만든 특제 소스를 바른 최고급 요리</p>
+								<h3>25,800￦</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section04">
+			<div class="sec04_box">
+				<div class="updown_btn">
+					<a href="#" class="up_btn">▲</a>
+					<a href="#" class="down_btn">▼</a>
+				</div>
+				<div class="sec04_top">Wine</div>
+				<div class="sec04_bottom fl">
+					<ul>
+						<li>
+							<div class="wine_left">
+								<div class="wine_img01">
+									<img src="images/wine01.jpg" alt="wine01">
+								</div>
+							</div>
+							<div class="wine_right">
+								<h2>오늘하루도 고생했어, 토닥토닥</h2>
+								<h3>2010 Evinu Ggarvinoun (8.5)</h3>
+								<p>
+									프랑스산 보급형 와인으로 한국과 일본에만 <br/>
+									수출하는 한정품 와인, 드라이한 맛과 상큼한 <br/>
+									과일향의 풍미를 느낄 수 있다. <br/>
+								</p>
+								<p class="wine_info">
+									Sweetness :  &nbsp; ★★☆☆☆ <br/>
+									Body : &nbsp; &nbsp; &nbsp; &nbsp; ★★★☆☆ <br/>
+									Price : G 2,900 / B 18,000
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="wine_left">
+								<div class="wine_img02">
+									<img src="images/wine02.jpg" alt="wine02">
+								</div>
+							</div>
+							<div class="wine_right">
+								<h2>오늘 하루, 너의 위로가 되길</h2>
+								<h3>2007 Grapashon Goldenlabel (9.7)</h3>
+								<p>
+									아일랜드산 최고급 포도로 제작된 고품질 <br/>
+									와인으로 아일랜드 왕실에 제공되던 와인, <br/>
+									깊은 달콤함이 미각을 사로잡는다. <br/>
+								</p>
+								<p class="wine_info">
+									Sweetness :  &nbsp; ★★★★☆ <br/>
+									Body : &nbsp; &nbsp; &nbsp; &nbsp; ★★☆☆☆ <br/>
+									Price : G 4,900 / B 27,000
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="wine_left">
+								<div class="wine_img03">
+									<img src="images/wine03.jpg" alt="wine03">
+								</div>
+							</div>
+							<div class="wine_right">
+								<h2>힘들다면 내게 기대, 달래줄게</h2>
+								<h3>2015 Alpha Omega (13.0)</h3>
+								<p>
+									이탈리아의 햇살을 머금은 포도로 만든 와인, <br/>
+									깊은 풍미와 풍부한 바디감으로 진한 여운이 <br/>
+									남는 드라이함이 특징이다.  <br/>
+								</p>
+								<p class="wine_info">
+									Sweetness :  &nbsp; ★☆☆☆☆ <br/>
+									Body : &nbsp; &nbsp; &nbsp; &nbsp; ★★★★☆ <br/>
+									Price : G 3,900 / B 22,000
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="wine_left">
+								<div class="wine_img04">
+									<img src="images/wine04.jpg" alt="wine04">
+								</div>
+							</div>
+							<div class="wine_right">
+								<h2>너와 만난 오늘은 행운</h2>
+								<h3>1998 Richello Diarovanoun (11.0)</h3>
+								<p>
+									그리스의 바다향을 머금은 최고급 와인으로 <br/>
+									제한수량을 두고 제작,판매하는 골든라인 <br/>
+									와인으로 특별한 인상을 남길 수 있는 와인 <br/>
+								</p>
+								<p class="wine_info">
+									Sweetness :  &nbsp; ★★★☆☆ <br/>
+									Body : &nbsp; &nbsp; &nbsp; &nbsp; ★★★★★ <br/>
+									Price : G 10,900 / B 62,000
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section05">
+			<div class="sec05_box">
+				<div id="map-canvas" class="showBalloon clearfix fl" title="찾아오시는 길"></div>
+				<div class="shop fl">
+					<h1>Welcome</h1>
+					<ul>
+						<li>
+							<a href="#" class="map1 onn">남부터미널 본점</a>
+							<ul class="on3">
+								<li>전화번호: 02-587-5757</li>
+								<li>영업시간: 15:00 ~ 25:00</li>
+								<li>주소: 서울특별시 서초구 서초3동 1459-2</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="map2">교대점</a>
+							<ul>
+								<li>전화번호: 02-587-1199</li>
+								<li>영업시간: 15:00 ~ 25:00</li>
+								<li>주소: 서울특별시 서초구 서초동 1570-13</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="map3">사당점</a>
+							<ul>
+								<li>전화번호: 02-6465-9555</li>
+								<li>영업시간: 15:00 ~ 25:00</li>
+								<li>주소: 서울특별시 서초구 방배동 451-11</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="map4">혜화점</a>
+							<ul>
+								<li>전화번호: 02-741-7786</li>
+								<li>영업시간: 15:00 ~ 25:00</li>
+								<li>주소: 서울특별시 종로구 명륜4가 170-6</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="map5">합정점</a>
+							<ul>
+								<li>전화번호: 02-332-8844</li>
+								<li>영업시간: 00:00 ~ 24:00</li>
+								<li>주소: 서울특별시 마포구 서교동 366-2</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="map6">신천점</a>
+							<ul>
+								<li>전화번호: 02-741-1199</li>
+								<li>영업시간: 15:00 ~ 25:00</li>
+								<li>주소: 서울특별시 잠실동 잠실동 186</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div> <!-- id="container" class="cf" -->
+	
+	<div id="footer" class="cf">
+		<div class="footer_box">
+			<div class="ftcenter">
+				<div class="foot_logo fl">
+					<img src="images/logo_img2.png" alt="footlogo" />
+				</div>
+				<div class="foot_txt fl">
+					<h2>오늘, 와인한잔</h2> <br/>
+					본사주소: 서울특별시 서초구 서초3동 1459-2 와라빌딩 2층 | 
+					본사번호: 02-587-7575 | 고객센터: 02-822-8282 <br/>
+					fax: 02-587-8282 | 이메일: hyhyhy1122@naver.com | 
+					담당자: 정화영 | 관리자: 정화영<br>
+					
+					<span>ⓒ Copy Right All Reserved Hwayoung Jung.</span>
+					<div class="foot_sns">
+						<a href="#" class="color1">
+							<img src="images/sns011.png" alt="sns01" />
+							instargram
+						</a>
+						<a href="#" class="color2">
+							<img src="images/sns022.png" alt="sns02" />
+							youtube
+						</a>
+						<a href="#" class="color3">
+							<img src="images/sns033.png" alt="sns03" />
+							facebook
+						</a>
+						<a href="#" class="color4">
+							<img src="images/sns044.png" alt="sns04" />
+							twitter
+						</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	
+	<div id="quick">
+		<a href="#" class="on"></a>
+		<a href="#"></a>
+		<a href="#"></a>
+		<a href="#"></a>
+		<a href="#"></a>
+		<a href="#"></a>
+	</div>
+</body>
+</html>

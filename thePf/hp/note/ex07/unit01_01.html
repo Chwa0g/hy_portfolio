@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> 글자와 관련된 속성 알아보기 </title>
+		<meta charset="UTF-8" />
+		<style type="text/css">
+		/* size 1em 은 16px 이다 weight 200은 얇은 400은 보통 600은 굵은 */
+			#box1 h2{
+				font-family:"Times New Roman",sans-serif;
+				font-size: 2em;
+				font-weight: 400;
+			}
+			#box1 p{
+				font-family: Georgia, sans-serif;
+				font-size: 20px;
+				font-weight: bold;
+			}
+			#box2>h2{
+				font-style: italic;
+				color: red;
+				/* variant 안에 small-caps 는 작은 대문자로 바꿔!  */
+			}
+			#box2>p{
+				font-variant: small-caps;
+				color: #336633;
+			}
+				/* font 안에는 크기나 글자체등 설정 가능 (속성표기법)  */
+			#box3 h2{
+				font:3em Arial;
+			}
+			#box3 p{
+				font: small-caps italic 30px "times New Roman";
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="box1">
+			<h2>font-family, font-size, font-weight</h2>
+			<p>Well done is better than well said.</p>
+		</div>
+		<div id="box2">
+			<h2>font-style, font-variant, color</h2>
+			<p>Seeing much, suffering much, and studying much, are the three pillars of learning. </p>
+		</div>
+		<div id="box3">
+			<h2>font</h2>
+			<p>Education is a progressive discovery of our own ignorance. </p>
+		</div>
+	</body>
+</html>
